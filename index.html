@@ -21,7 +21,6 @@
 
     <!-- header -->
     <header class="header bg-white">
-
         <nav class="navbar bg-white">
             <div class="container flex">
                 <a href="index.html" class="navbar-brand">
@@ -33,14 +32,16 @@
 
                 <div class="navbar-collapse bg-blue">
                     <button type="button" class="navbar-hide-btn">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-axis-x" width="60" height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-axis-x" width="60"
+                            height="60" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                             <path d="M4 13v.01" />
                             <path d="M4 9v.01" />
                             <path d="M4 5v.01" />
                             <path d="M17 20l3 -3l-3 -3" />
                             <path d="M4 17h16" />
-                          </svg>
+                        </svg>
                     </button>
                     <ul class="navbar-nav">
                         <li class="nav-item">
@@ -78,57 +79,54 @@
                 </div>
             </div>
         </nav>
-
-        <div class="header-inner text-white text-center">
-            <div id="slider">
-                <div id="contenedor_s">
-                    <div id="imagen1">
-                        <div class="fondo-slider"></div>
-                        <h2>Insertar imagen 1 aqui</h2>
-                    </div>
-                    <div id="imagen2">
-                        <div class="fondo-slider"></div>
-                        <h2>Insertar imagen 2 aqui</h2>
-                    </div>
-                    <div id="imagen3">
-                        <div class="fondo-slider"></div>
-                        <h2>Insertar imagen 3 aqui</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
     </header>
     <!-- end of header -->
 
+    <!--  -->
+    <section id="slider">
+        <div class="slider-container">
+            <div class="slider-image">
+                <img src="images/banner-1.jpg" alt="Slider Image 1">
+            </div>
+            <div class="slider-image">
+                <img src="images/banner-2.jpg" alt="Slider Image 2">
+            </div>
+            <div class="slider-image">
+                <img src="images/banner-3.jpg" alt="Slider Image 3">
+            </div>
+        </div>
+        <div class="slider-controls">
+            <button id="prevBtn">&lt;</button>
+            <button id="nextBtn">&gt;</button>
+        </div>
+    </section>
+    <!-- end of Slide -->
+
+
+
+    <!-- FIN Acerca de la clinica -->
+
+
     <main>
-        <!-- about section -->
-        <section id="about" class="about py">
-            <div class="about-inner">
-                <div class="container grid">
-                    <div class="about-left text-center">
-                        <div class="section-head">
-                            <h2>Clinica Nueva</h2>
-                            <div class="border-line"></div>
-                        </div>
-                        <p class="text text-lg">La Clínica Nueva, es una obra de la Congregación de Dominicas de Santa
-                            Catalina de Sena, primera comunidad religiosa fundada en 1880 en Villa de Leyva (Boyacá).
+        <!-- INICIO Acerca de la clinica -->
+        <section id="about">
+            <div class="container-infoclinica">
+                <div class="grid-infoclinica text-center">
+                    <div class="divImageninfo"><img src="images/clinicafoto.jpg"></div>
+                    <div class="divtextoinfo text-shadow">
+                        <p>La Clínica Nueva, es una obra de la Congregación de Dominicas de Santa Catalina de Sena,
+                            primera comunidad religiosa fundada en 1880 en Villa de Leyva (Boyacá).
                             Como institución hospitalaria nace el 12 de octubre de 1958. Durante más de medio siglo de
                             existencia y desde sus inicios, se continúa trabajado con la vocación de servicio y el
                             compromiso con sus cambios y tendencias conservando siempre nuestro propósito común: El
                             paciente y su familia.</p>
-                        <a href="#" class="btn btn-blue">Leer más</a>
-                    </div>
-                    <div class="about-right flex">
-                        <div class="img">
-                            <img src="images/clinicafoto.jpg">
-                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- end of about section -->
+        <!-- FIN Acerca de la clinica -->
 
-        <!-- banner one -->
+        <!-- INICIO banner one -->
         <section id="banner-one" class="banner-one text-center">
             <div class="info-capacidad container text-white grid">
                 <div>
@@ -149,12 +147,189 @@
                 </div>
                 <div>
                     <h1>2</h1>
-                    <h3>Salas de procedimeintos</h3>
+                    <h3>Salas de procedimientos</h3>
                 </div>
 
             </div>
         </section>
-        <!-- end of banner one -->
+        <!-- END of banner one -->
+
+        <!-- Inicio Seccion Especialidades-->
+        <section class="especialidades">
+            <h2 class="text-center text-blue">Especialidades</h2>
+            <div class="tabs">
+                <button class="tab-link active" data-tab="general">Apoyo diagnostico</button>
+                <button class="tab-link" data-tab="uci">Especialidades clinicas</button>
+                <button class="tab-link" data-tab="apoyo">Especialidades quirurgicas</button>
+            </div>
+            <div class="tab-content  text-shadow active" id="general">
+
+                <table ">
+                    <tbody>
+                        <tr>
+                            <td>- Electrodiagnóstico</td>
+                            <td>- Endoscopia digestiva</td>
+                        </tr>
+                        <tr>
+                            <td>- Fisioterapia</td>
+                            <td>- Fonoaudiología y terapia del lenguaje</td>
+                        </tr>
+                        <tr>
+                            <td>- Neumología / fibrobroncoscopia</td>
+                            <td>- Radiología / imágenes diagnósticas</td>
+                        </tr>
+                        <tr>
+                            <td>- Servicio farmacéutico </td>
+                            <td>- Terapia ocupacional</td>
+                        </tr>
+                        <tr>
+                            <td>- Terapia respiratoria</td>
+                            <td>- Hemodinamia</td>
+                        </tr>
+                        <tr>
+                            <td>- Hemodinamia</td>
+                            <td>- Ultrasonido</td>
+                        </tr>
+                      
+                    </tbody>
+                </table>
+             
+
+            </div>
+            <div class=" tab-content text-shadow " id=" uci">
+
+                    <table ">
+                    <tbody>
+                        <tr>
+                            <td>- Anestesia</td>
+                            <td>- Cirugía general</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía plástica y estética</td>
+                            <td>- Cirugía vascular</td>
+                        </tr>
+                        <tr>
+                            <td>- Dermatología</td>
+                            <td>- Endocrinología</td>
+                        </tr>
+                        <tr>
+                            <td>- Gastroenterología </td>
+                            <td>- Medicina física y rehabilitación</td>
+                        </tr>
+                        <tr>
+                            <td>- Medicina interna</td>
+                            <td>- Neumología</td>
+                        </tr>
+                        <tr>
+                            <td>- Ortopedia y traumatología</td>
+                            <td>- Psiquiatría</td>
+                        </tr>
+                        <tr>
+                            <td>- Urología</td>
+                          
+                        </tr>
+                      
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class=" tab-content text-shadow " id=" apoyo">
+                        <table ">
+                    <tbody>
+                        <tr>
+                            <td>- Cirugía de mano</td>
+                            <td>- Cirugía de tórax</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía dermatológica</td>
+                            <td>- Cirugía gastrointestinal</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía general</td>
+                            <td>- Cirugía maxilofacial</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía neurológica </td>
+                            <td>- Cirugía oncológica</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía ortopédica</td>
+                            <td>- Cirugía otorrinolaringología</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía plástica y estética</td>
+                            <td>- Cirugía vascular y angiológica</td>
+                        </tr>
+                        <tr>
+                            <td>- Cirugía urológica</td>
+                            <td>- Trasplante de tejido osteomuscula</td>      
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- FIN section Especialidades -->
+
+        <!-- IINICIO section Horario de visitas -->
+        <section class=" horario-visitas">
+                            <div class="grid-horario">
+                                <div class="divTitulo">
+                                    <h2 class="text-center text-blue">Horario de visitas</h2>
+                                </div>
+                                <div class="divContent">
+                                    <h3>Hospitalizacion General o Cuidado Intermedio</h3>
+                                    <p><span>Habitacion: </span>302 a 335 de 8:00am a 7:00pm</p>
+                                    <p>
+
+                                        --------------
+                                    </p>
+                                    <h3>Unidad de cuidados intensivos</h3>
+                                    <p><span>Unidad:</span> 201 a 219 de 11:00am a 1:00pm</p>
+                                    <p><span>Unidad:</span> 302 a 335 de 3:00pm a 7:00pm</p>
+                                </div>
+                            </div>
+        </section>
+        <!-- FIN section Horario de visitas -->
+
+
+        <!-- package services section -->
+        <section id="package-service" class="package-service py text-center">
+
+            <div class="container">
+                <div class="package-service-head text-white">
+                    <h2>Servicios</h2>
+                    <p class="text text-lg"></p>
+                </div>
+
+                <div class="servicios-grid">
+                    <div class="div1servicio package-service-item bg-white">
+                        <div class="icon flex">
+                            <i class="fas fa-calendar-alt fa-2x"></i>
+                        </div>
+                        <h3>Servicios Ambulatorios</h3>
+                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
+                        </p>
+                        <a href="#" class="btn btn-blue">Leer más</a>
+                    </div>
+
+                    <div class="div2servicio package-service-item bg-white">
+                        <div class="icon flex">
+                            <i class="fas fa-stethoscope fa-2x"></i>
+                        </div>
+                        <h3>Servicios hospitalarios</h3>
+                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
+                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
+                        </p>
+                        <a href="#" class="btn btn-blue">Leer más</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- end of package services section -->
+
 
         <!-- services section -->
         <section id="services" class="services py">
@@ -259,63 +434,13 @@
                         </div>
                     </div>
 
-                    <div class="doc-panel-item">
-                        <div class="img flex">
-                            <img src="images/doc-3.png" alt="doctor image">
-                            <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">tanya collins</p>
-                                <p class="text-lg">Medicine</p>
-                            </div>
-                        </div>
-                    </div>
+
                 </div>
             </div>
         </section>
         <!-- end of doctors section -->
 
-        <!-- package services section -->
-        <section id="package-service" class="package-service py text-center">
-            <div class="container">
-                <div class="package-service-head text-white">
-                    <h2>Package Service</h2>
-                    <p class="text text-lg">Best service package for you</p>
-                </div>
-                <div class="package-service-inner grid">
-                    <div class="package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-phone fa-2x"></i>
-                        </div>
-                        <h3>Regular Case</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
-                        </p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
 
-                    <div class="package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-calendar-alt fa-2x"></i>
-                        </div>
-                        <h3>Serious Case</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
-                        </p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-
-                    <div class="package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-comments fa-2x"></i>
-                        </div>
-                        <h3>Emergency Case</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
-                        </p>
-                        <a href="#" class="btn btn-blue">Read More</a>
-                    </div>
-                </div>
-            </div>
-        </section>
         <!-- end of package services section -->
 
         <!-- posts section -->
@@ -387,7 +512,10 @@
         <section id="contact" class="contact py">
             <div class="container grid">
                 <div class="contact-left">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.0010416188172!2d-74.07105067546958!3d4.634288171042001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2e7e241aa3%3A0x66b2ec0e470ff23b!2sCl.%2045f%20%2316a%20-%2011%2C%20Teusaquillo%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1678193508503!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.0010416188172!2d-74.07105067546958!3d4.634288171042001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2e7e241aa3%3A0x66b2ec0e470ff23b!2sCl.%2045f%20%2316a%20-%2011%2C%20Teusaquillo%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1678193508503!5m2!1ses!2sco"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <div class="contact-right text-white text-center bg-blue">
                     <div class="contact-head">
@@ -477,9 +605,12 @@
 
             <div class="footer-links">
                 <ul class="flex">
-                    <li><a href="#" class="text-white flex"> <i class="fab fa-facebook-f"></i></a></li>
-                    <li><a href="#" class="text-white flex"> <i class="fab fa-twitter"></i></a></li>
-                    <li><a href="#" class="text-white flex"> <i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/ClinicaNueva_" class="text-white flex"> <i
+                                class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://www.facebook.com/ClinicaNuevaBogota/" class="text-white flex"> <i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/clinicanueva_/" class="text-white flex"> <i
+                                class="fab fa-instagram"></i></a></li>
                 </ul>
             </div>
         </div>

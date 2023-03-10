@@ -2,7 +2,7 @@
 
 /* variables */
 :root {
-    --fros-blue-color: #0050d5;
+    --fros-blue-color: #0077be;
     --light-blue-color: #16c5ff;
     --dark-color: #202020;
     --light-gray: #dedede;
@@ -59,6 +59,10 @@ a {
 
 .text-white {
     color: var(--light-color);
+}
+
+.text-shadow {
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.30);
 }
 
 /* button */
@@ -159,7 +163,7 @@ h3 {
 }
 
 .text {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .text-md {
@@ -190,12 +194,14 @@ h3 {
 
 .navbar {
     position: fixed;
+    opacity: 0.94;
     top: 0;
     left: 0;
     width: 100%;
     padding: 3.2rem 0;
     box-shadow: 0 0.1px 10px rgba(0, 0, 0, 0.4);
     z-index: 999;
+
 }
 
 .navbar .container {
@@ -223,14 +229,13 @@ button[class ^=navbar]:hover {
     transform: scale(1.1);
 }
 
-
 .navbar-collapse {
     position: fixed;
     top: 0;
     right: 0;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.97;
     padding: 15rem 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -263,7 +268,7 @@ button[class ^=navbar]:hover {
 .navbar-hide-btn {
     position: absolute;
     justify-content: center;
-   
+
     top: 4.6rem;
 }
 
@@ -323,7 +328,7 @@ button[class ^=navbar]:hover {
     padding: 0 1.5rem;
 }
 
-/* header inner */
+/* INICIO header inner */
 .header-inner {
     padding-top: 1rem;
 }
@@ -365,156 +370,178 @@ button[class ^=navbar]:hover {
     margin: 0 auto;
 }
 
-/* slider */
+/* FIN header inner*/
+
+/* INICIO de slider tipo Banner*/
 #slider {
-  width: 100%;
-  height: 400px;
-  margin: auto;
-  margin-top: 130px;
-  background-color: #d2d2d4;
-  overflow: hidden;
-}
-
-#contenedor_s {
-  display: grid;
-  width: 100%;
-  grid-template-columns: 100% 100% 100%;
-  animation-name: mover;
-  animation-duration: 20s;
-  animation-iteration-count: infinite;
-}
-
-#imagen1 {
-  background-image: url('/images/banner-1.jpg');
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
-#imagen2 {
-  background-image: url('/images/banner-2.jpg');
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
-#imagen3 {
-  background-image: url('/images/banner-3.jpg');
-  width: 100%;
-  height: 500px;
-  background-size: cover;
-  background-position: center;
-}
-
-@keyframes mover {
-  25% {
-    margin-left: 0%;
-  }
-  28% {
-    margin-left: -100%;
-  }
-  54% {
-    margin-left: -100%;
-  }
-  58% {
-    margin-left: -200%;
-  }
-  84% {
-    margin-left: -200%;
-  }
-  90% {
-    margin-left: -100%;
-  }
-  100% {
-    margin-left: 0%;
-  }
-}
-
-/* about section */
-.section-head h2 {
-    font-size: 4rem;
-    font-weight: 500;
-    margin-bottom: 3rem;
-    text-align: center;
-}
-
-.border-line {
-    height: .4rem;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    background-color: var(--light-gray);
     position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
 }
 
-.border-line::after {
-    content: "";
+.slider-container {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image {
     position: absolute;
     top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    transform: translateX(-50%);
-    height: 100%;
-    width: 102px;
-    background-color: var(--light-blue-color);
-}
-
-.about-left {
-    margin-bottom: 6rem;
-}
-
-.about-right {
-    margin-top: 16.8rem;
-}
-
-.about-left .text {
-    margin: 5.6rem 0;
-    line-height: 2.3;
-}
-
-.about .btn-white {
-    color: var(--dark-gray);
-}
-
-.about-right .img {
+    left: 0;
     width: 100%;
-    background-color: #3983fe;
-    max-width: 537px;
-    position: relative;
+    height: 100%;
+    display: none;
 }
 
-.about-right .img img {
-    padding-top: 10rem;
-    -webkit-transform: scaleX(1.03);
-    -ms-transform: scaleX(1.03);
-    transform: scaleX(1.03);
+.slider-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 
-.about-right .img::after,
-.about-right .img::before {
-    content: "";
+.slider-image.active {
+    display: block;
+}
+
+.slider-controls {
     position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-controls button {
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.slider-controls button:focus {
+    outline: none;
+}
+
+.slider-controls button:hover {
+    color: #ccc;
+}
+
+/*FIN de slider de imagenes tipo banner*/
+
+/* INICIO info de la clinica    */
+.container-infoclinica {
+    display: flex;
+    justify-content: center;
+}
+
+.grid-infoclinica {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 2px;
+    align-content: center;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    margin: 0 auto;
+    padding-top: 2px;
 }
 
-.about-right .img::after {
-    top: -56px;
-    left: 0;
-    background-color: #0060ff;
-    z-index: -1;
+.divImageninfo {
+    grid-area: 1 / 1 / 2 / 2;
 }
 
-.about-right .img::before {
-    top: -112px;
-    left: 0;
-    background-color: var(--fros-blue-color);
-    z-index: -2;
+.divtextoinfo {
+    grid-area: 1 / 2 / 2 / 3;
+    margin: 5rem;
 }
 
+/* FIN info de la clinica    */
+
+/* INICIO Seccion Especialidades */
+.especialidades {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+.especialidades h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.tab-link {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    color: #0077be;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: background-color 2s ease;
+    gap: 2rem;
+}
+
+.tab-link.active {
+    background-color: #0077be;
+    color: #fff;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+/* FIN */
+
+/*Inicio de Horario */
+.horario-visitas {
+    margin: 5rem;
+}
+
+.grid-horario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.divTitulo {
+    grid-area: 1 / 1 / 2 / 2;
+    border-right: solid 2px rgb(109, 119, 255);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10rem;
+}
+
+.divContent {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 5rem;
+}
+
+/*FIN de Horario*/
 
 
 /* banner one section */
@@ -544,16 +571,7 @@ button[class ^=navbar]:hover {
     font-weight: 500;
 }
 
-.numero{
-    height: 5%;
-    width: 5%;
-    font-size: 4em;   
-    font-weight: bold;
-    color: var(--light-blue-color);
-    background-color: #0060ff;
-    position: absolute;
-    mix-blend-mode: screen;
-}
+
 
 /* services section */
 .services .section-head .text-lg {
@@ -581,7 +599,8 @@ button[class ^=navbar]:hover {
 }
 
 .services-inner {
-    padding: 6rem 0;
+    padding: 10rem 0;
+    background-color: #0050d5;
 }
 
 .service-item {
@@ -679,6 +698,23 @@ button[class ^=navbar]:hover {
 /* package service */
 .package-service-inner {
     margin-top: 14rem;
+}
+
+.div1service {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2service {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 30px;
+    grid-row-gap: 0px;
+    padding: 5rem;
 }
 
 .package-service {
@@ -960,8 +996,8 @@ button[class ^=navbar]:hover {
     .border-line {
         width: 405px;
     }
-
 }
+
 
 @media(min-width: 768px) {
     .header-inner-left h1 {
@@ -986,7 +1022,7 @@ button[class ^=navbar]:hover {
     .package-service-inner,
     .posts-inner,
     .footer-inner {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
         -webkit-column-gap: 6rem;
         -moz-column-gap: 6rem;
         column-gap: 6rem;
@@ -1006,10 +1042,14 @@ button[class ^=navbar]:hover {
         -ms-flex-pack: start;
         justify-content: flex-start;
     }
-    .info-capacidad{
+
+    .info-capacidad {
         grid-template-columns: repeat(1, 1fr);
     }
+
 }
+
+
 
 @media(min-width: 992px) {
     .header-inner {
@@ -1045,6 +1085,8 @@ button[class ^=navbar]:hover {
         right: 0;
         padding-left: 5rem;
     }
+
+    /* */
 
     .about-inner .container {
         grid-template-columns: repeat(2, 1fr);
@@ -1129,7 +1171,7 @@ button[class ^=navbar]:hover {
         -moz-column-gap: 2.4rem;
         column-gap: 2.4rem;
     }
-    
+
 }
 
 @media(min-width: 1200px) {
@@ -1289,8 +1331,7 @@ button[class ^=navbar]:hover {
     transition: none !important;
 }
 
-.info-capacidad{
+.info-capacidad {
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2em;
 }
-
