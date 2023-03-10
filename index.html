@@ -105,6 +105,7 @@
 
 
     <!-- FIN Acerca de la clinica -->
+    <!-- -->
 
 
     <main>
@@ -112,7 +113,9 @@
         <section id="about">
             <div class="container-infoclinica">
                 <div class="grid-infoclinica text-center">
-                    <div class="divImageninfo"><img src="images/clinicafoto.jpg"></div>
+                    <div class="divImageninfo">
+                        <img src="images/clinicafoto.jpg"></div>
+                 
                     <div class="divtextoinfo text-shadow">
                         <p>La Clínica Nueva, es una obra de la Congregación de Dominicas de Santa Catalina de Sena,
                             primera comunidad religiosa fundada en 1880 en Villa de Leyva (Boyacá).
@@ -125,6 +128,13 @@
             </div>
         </section>
         <!-- FIN Acerca de la clinica -->
+
+
+
+
+
+
+
 
         <!-- INICIO banner one -->
         <section id="banner-one" class="banner-one text-center">
@@ -305,24 +315,46 @@
                 <div class="servicios-grid">
                     <div class="div1servicio package-service-item bg-white">
                         <div class="icon flex">
-                            <i class="fas fa-calendar-alt fa-2x"></i>
-                        </div>
-                        <h3>Servicios Ambulatorios</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
-                        </p>
-                        <a href="#" class="btn btn-blue">Leer más</a>
-                    </div>
-
-                    <div class="div2servicio package-service-item bg-white">
-                        <div class="icon flex">
                             <i class="fas fa-stethoscope fa-2x"></i>
                         </div>
+                        <h3>Servicios Ambulatorios</h3>
+                        <table class="customTable">
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <li>Consulta externa</li>
+                                        <li>Imagenes diagnosticas</li>
+                                        <li>Servicio farmaceutico</li>
+                                        <li>Endoscopia digestiva</li>
+                                        <li>Neumologia</li>
+                                    </td>
+                                    <td>
+                                        <li>Fibroscopia</li>
+                                        <li>Cardiologia</li>
+                                        <li>Terapia fisica</li>
+                                        <li>Fonoauiologia</li>
+                                        <li>Terapia ocupacional</li>
+                                        <li>Terapia respiratoria</li>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <img src="images/servicio-ambulatorio.png">
+                    </div>
+                    <div class="div2servicio package-service-item bg-white">
+                        <div class="icon flex">
+                            <i class="fas fa-hospital fa-2x"></i>
+                        </div>
                         <h3>Servicios hospitalarios</h3>
-                        <p class="text text-sm">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur,
-                            asperiores. Expedita, reiciendis quos beatae at consequatur voluptatibus fuga iste adipisci.
-                        </p>
-                        <a href="#" class="btn btn-blue">Leer más</a>
+                        <ul>
+                            <li>Urgencias</li>
+                            <li>Hospitalizacion adultos</li>
+                            <li>cuidados intensivos</li>
+                            <li>Cuidados intermedios adultos</li>
+                            <li>Cirugía</li>
+                        </ul>
+                        <img src="images/servicios-doctor.png">
+
                     </div>
 
                 </div>
@@ -332,122 +364,79 @@
 
 
         <!-- services section -->
-        <section id="services" class="services py">
-            <div class="container">
-                <div class="section-head text-center">
-                    <h2 class="lead">The Best Doctor gives the least medicines</h2>
-                    <p class="text text-lg">A perfect way to show your hospital services</p>
-                    <div class="line-art flex">
-                        <div></div>
-                        <img src="images/4-dots.png">
-                        <div></div>
-                    </div>
-                </div>
-                <div class="services-inner text-center grid">
-                    <article class="service-item">
-                        <div class="icon">
-                            <img src="images/service-icon-1.png">
-                        </div>
-                        <h3>Cardio Monitoring</h3>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                            possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus
-                            consequatur!</p>
-                    </article>
-
-                    <article class="service-item">
-                        <div class="icon">
-                            <img src="images/service-icon-2.png">
-                        </div>
-                        <h3>Medical Treatment</h3>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                            possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus
-                            consequatur!</p>
-                    </article>
-
-                    <article class="service-item">
-                        <div class="icon">
-                            <img src="images/service-icon-3.png">
-                        </div>
-                        <h3>Emergency Help</h3>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                            possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus
-                            consequatur!</p>
-                    </article>
-
-                    <article class="service-item">
-                        <div class="icon">
-                            <img src="images/service-icon-4.png">
-                        </div>
-                        <h3>First Aid</h3>
-                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
-                            possimus doloribus facilis velit, assumenda tempora quas mollitia quos voluptatibus
-                            consequatur!</p>
-                    </article>
-                </div>
+        <section class="reconocimiento bg-white">
+            <h1>reconocimientos</h1>
+            <div class="contenedor-r">
+                <div class="texto-r"><img src="images/reconocimiento_ilustracion.png"> </div>
+                <div class="imagen-r"> Section 1.10.32 of "de Finibus Bonorum et Malorum", written by Cicero in 45
+                    BC
+                    "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                    laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto
+                    beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut
+                    odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+                    Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                    voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                    laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                    in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat
+                    quo voluptas nulla pariatur?"</div>
             </div>
         </section>
         <!-- end of services section -->
 
-        <!-- banner two section -->
-        <section id="banner-two" class="banner-two text-center">
-            <div class="container grid">
-                <div class="banner-two-left">
-                    <img src="images/banner-2-img.png">
-                </div>
-                <div class="banner-two-right">
-                    <p class="lead text-white">When you are young and healthy, it never occurs to you that in a single
-                        second your whole life could change.</p>
-                    <div class="btn-group">
-                        <a href="#" class="btn btn-white">Learn More</a>
-                        <a href="#" class="btn btn-light-blue">Sign In</a>
-                    </div>
-                </div>
+<section class="testimonios">
+<div class="heading"><b>our</b>Testimonios</div>
+<div class="wrapper">
+    <div class="contenedor-testimonios">
+        <div class="profile">
+            <div class="imgBox">
+                <img src="images/logo.png">
             </div>
-        </section>
-        <!-- end of banner two section -->
-
-        <!-- doctors section -->
-        <section id="doc-panel" class="doc-panel py">
-            <div class="container">
-                <div class="section-head">
-                    <h2>Our Doctor Panel</h2>
-                </div>
-
-                <div class="doc-panel-inner grid">
-                    <div class="doc-panel-item">
-                        <div class="img flex">
-                            <img src="images/doc-1.png" alt="doctor image">
-                            <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">samuel goe</p>
-                                <p class="text-lg">Medicine</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="doc-panel-item">
-                        <div class="img flex">
-                            <img src="images/doc-2.png" alt="doctor image">
-                            <div class="info text-center bg-blue text-white flex">
-                                <p class="lead">elizabeth ira</p>
-                                <p class="text-lg">Cardiology</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
+            <h2>Person 1</h2>
+        </div>
+        <p><span class="fa fa-quote-left left"></span>dfgsfgsdfg sfg sdfgs sdf sdfg sdfg sdfgs fdg sdfg sdfg dfgdsfgdfgsdfgs df df fdgdfsg dfgs dfsgsdfgsdf dfgdfs dfg dfg dfg dsdfgsdfgsdfg dfgfdg dsgsdgfdfs dfgfdsg sdfg dfgfdsg sdfg fdg sdfgsdfgsdfghsdfgsdf<span class="fa fa-quote-right right"></span></p>
+    <div class="social"></div>
+    </div>
+    <div class="contenedor-testimonios">
+        <div class="profile">
+            <div class="imgBox">
+                <img src="images/logo.png">
             </div>
-        </section>
-        <!-- end of doctors section -->
+            <h2>Person 1</h2>
+        </div>
+        <p><span class="fa fa-quote-left left"></span>dfgsfgsdfg sfg sdfgs sdf sdfg sdfg sdfgs fdg sdfg sdfg dfgdsfgdfgsdfgs df df fdgdfsg dfgs dfsgsdfgsdf dfgdfs dfg dfg dfg dsdfgsdfgsdfg dfgfdg dsgsdgfdfs dfgfdsg sdfg dfgfdsg sdfg fdg sdfgsdfgsdfghsdfgsdf<span class="fa fa-quote-right right"></span></p>
+    <div class="social"></div>
+    </div>
+    <div class="contenedor-testimonios">
+        <div class="profile">
+            <div class="imgBox">
+                <img src="images/logo.png">
+            </div>
+            <h2>Person 1</h2>
+        </div>
+        <p><span class="fa fa-quote-left left"></span>dfgsfgsdfg sfg sdfgs sdf sdfg sdfg sdfgs fdg sdfg sdfg dfgdsfgdfgsdfgs df df fdgdfsg dfgs dfsgsdfgsdf dfgdfs dfg dfg dfg dsdfgsdfgsdfg dfgfdg dsgsdgfdfs dfgfdsg sdfg dfgfdsg sdfg fdg sdfgsdfgsdfghsdfgsdf<span class="fa fa-quote-right right"></span></p>
+    <div class="social"></div>
+    </div>
+    <div class="contenedor-testimonios">
+        <div class="profile">
+            <div class="imgBox">
+                <img src="images/logo.png">
+            </div>
+            <h2>Person 1</h2>
+        </div>
+        <p><span class="fa fa-quote-left left"></span>hola dfgsfgsdfg sfg sdfgs sdf sdfg sdfg sdfgs fdg sdfg sdfg dfgdsfgdfgsdfgs df df fdgdfsg dfgs dfsgsdfgsdf dfgdfs dfg dfg dfg dsdfgsdfgsdfg dfgfdg dsgsdgfdfs dfgfdsg sdfg dfgfdsg sdfg fdg sdfgsdfgsdfghsdfgsdf<span class="fa fa-quote-right right"></span></p>
+    <div class="social"></div>
+    </div>
+</div>
 
+</section>
 
-        <!-- end of package services section -->
 
         <!-- posts section -->
         <section id="posts" class="posts py">
             <div class="container">
                 <div class="section-head">
-                    <h2>Latest Post</h2>
+                    <h2>Noticias</h2>
                 </div>
                 <div class="posts-inner grid">
                     <article class="post-item bg-white">
@@ -455,15 +444,15 @@
                             <img src="images/post-1.jpg">
                         </div>
                         <div class="content">
-                            <h4>Inspiring stories of person and family centered care during a global pandemic.</h4>
+                            <h4>What is Lorem Ipsum?</h4>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
                                 voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
                             </p>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
                                 ipsam, quis iure sed nulla.</p>
                             <div class="info flex">
-                                <small class="text text-sm"><i class="fas fa-clock"></i> October 27, 2021</small>
-                                <small class="text text-sm"><i class="fas fa-comment"></i> 5 comments</small>
+                                <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
+                                <small class="text text-sm"><i class="fas fa-comment"></i> 1 comments</small>
                             </div>
                         </div>
                     </article>
@@ -473,14 +462,14 @@
                             <img src="images/post-2.jpg">
                         </div>
                         <div class="content">
-                            <h4>Inspiring stories of person and family centered care during a global pandemic.</h4>
+                            <h4>What is Lorem Ipsum?</h4>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
                                 voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
                             </p>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
                                 ipsam, quis iure sed nulla.</p>
                             <div class="info flex">
-                                <small class="text text-sm"><i class="fas fa-clock"></i> October 27, 2021</small>
+                                <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
                                 <small class="text text-sm"><i class="fas fa-comment"></i> 5 comments</small>
                             </div>
                         </div>
@@ -491,15 +480,15 @@
                             <img src="images/post-3.jpg">
                         </div>
                         <div class="content">
-                            <h4>Inspiring stories of person and family centered care during a global pandemic.</h4>
+                            <h4>What is Lorem Ipsum?</h4>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
                                 voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
                             </p>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
                                 ipsam, quis iure sed nulla.</p>
                             <div class="info flex">
-                                <small class="text text-sm"><i class="fas fa-clock"></i> October 27, 2021</small>
-                                <small class="text text-sm"><i class="fas fa-comment"></i> 5 comments</small>
+                                <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
+                                <small class="text text-sm"><i class="fas fa-comment"></i> 0 comments</small>
                             </div>
                         </div>
                     </article>

@@ -455,6 +455,7 @@ button[class ^=navbar]:hover {
 
 .divImageninfo {
     grid-area: 1 / 1 / 2 / 2;
+    width: 85%;
 }
 
 .divtextoinfo {
@@ -515,6 +516,7 @@ button[class ^=navbar]:hover {
 /*Inicio de Horario */
 .horario-visitas {
     margin: 5rem;
+
 }
 
 .grid-horario {
@@ -523,7 +525,7 @@ button[class ^=navbar]:hover {
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -572,7 +574,6 @@ button[class ^=navbar]:hover {
 }
 
 
-
 /* services section */
 .services .section-head .text-lg {
     color: var(--dark-gray);
@@ -615,6 +616,10 @@ button[class ^=navbar]:hover {
 .service-item .icon img {
     width: 80px;
     margin: auto;
+}
+.servicios-grid img {
+    width: 40%;
+
 }
 
 .service-item h3 {
@@ -774,7 +779,21 @@ button[class ^=navbar]:hover {
 .package-service-item .btn {
     margin: 4rem 0;
 }
+/* --------- INICIO reconocimientos ------ */
 
+.contenedor-r{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .texto-r { grid-area: 1 / 1 / 2 / 2; }
+    .imagen-r { grid-area: 1 / 2 / 2 / 3; }
+
+
+/* --------- FIN reconocimientos ------ */
 /* posts section */
 .posts {
     background-color: var(--light-gray);
@@ -1334,4 +1353,162 @@ button[class ^=navbar]:hover {
 .info-capacidad {
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2em;
+}
+
+
+
+.testimonial-section {
+    padding: 50px 0;
+    background-color: #f7f7f7;
+  }
+  
+  .testimonial-slider {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .testimonial-content {
+    text-align: center;
+  }
+  
+  .testimonial-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .testimonial-content p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+
+.testimonios{
+    position:relative;
+    min-height: 100vh;
+    width: 100%;
+    background-color: #070c0d;
+    overflow: hidden;
+}
+.testimonial-section::before{
+    position: absolute;
+    content: '';
+    width: 2000px;
+    height: 100%;
+    bottom: -70%;
+    border-radius: 50%;
+    background: #3b7cf5;
+}
+.testimonios .heading {
+    display: inline-block;
+    position: relative;
+    color: #3b7cf5;
+    font-size: 4vw;
+    padding: 60px;
+    width: 100%;
+    text-align: center;
+    font-weight: 800;
+}
+
+}
+.testimonios .heading::before{
+    position: absolute;
+    content: '';
+    width: 15%;
+    height: 7px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 25%;
+    background: #393939 ;
+}
+.testimonios .heading b{
+    color: #fff;
+
+}
+.wrapper{
+    width: 100%;
+    display: flex ;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contenedor-testimonios{
+    position:relative;
+    width: 350px;
+    color: #fff;
+    background: #222;
+    margin: 40px 10px;
+    padding: 30px 20px;
+    border-radius: 3px;
+    transition: 0.3s ease;
+    
+}
+
+.profile{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:-10%;
+    width: 100%;
+    display: block;
+}
+.imgBox{
+    position: relative;
+    height: 100px;
+    width:100px;
+    margin: auto;
+    border: 8px solid #070c0d;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.imgBox img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 0.3s ease;
+}
+.contenedor-testimonios h2{
+    padding: 5px 0;
+    text-transform: capitalize;
+    color: #fff;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.contenedor-testimonios p{
+    margin-top: 50px;
+   color: #fff;
+   padding:  0 8px;
+   font-size: 15px;
+   opacity: 0.8;
+}
+.contenedor-testimonios .left{
+    font-size: 30px;
+    display: block;
+    text-align: left;
+    color: #3b7cf5;
+}
+.contenedor-testimonios .right{
+    font-size: 30px;
+    display: block;
+    text-align: right;
+    color: #3b7cf5;
+}
+
+.contenedor-testimonios .social{
+    width: 100%;
+}
+.contenedor-testimonios .social i{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 8px;
+    background: rgb(255, 255, 255,0.08);
+    border-radius: 4px;
+}
+.social i:hover{
+    color:
 }
