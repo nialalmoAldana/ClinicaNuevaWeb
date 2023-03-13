@@ -376,7 +376,7 @@ button[class ^=navbar]:hover {
 #slider {
     position: relative;
     width: 100%;
-    height: 400px;
+    height: 600px;
     overflow: hidden;
 }
 
@@ -446,13 +446,25 @@ button[class ^=navbar]:hover {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 10px;
     grid-row-gap: 2px;
+    position: relative;
     align-content: center;
     align-items: center;
     width: 100%;
     margin: 0 auto;
     padding-top: 2px;
 }
-
+.texto-infTitulo{
+    position: absolute;
+    top: 15%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(4, 57, 233, 0.541);
+    color: var(--light-color);
+    padding: 10px;
+    width: 250px;
+   
+    font-size: 25px;
+}
 .divImageninfo {
     grid-area: 1 / 1 / 2 / 2;
     width: 85%;
@@ -461,6 +473,8 @@ button[class ^=navbar]:hover {
 .divtextoinfo {
     grid-area: 1 / 2 / 2 / 3;
     margin: 5rem;
+    text-align: left;
+    margin-left: 5px;
 }
 
 /* FIN info de la clinica    */
@@ -474,9 +488,23 @@ button[class ^=navbar]:hover {
 }
 
 .especialidades h2 {
-    font-size: 36px;
+    font-size: 50px;
     font-weight: bold;
     margin-bottom: 30px;
+}
+
+.especialidades-tabla {
+    margin: 0 auto;
+}
+
+.especialidades-tabla tr {
+    margin: 20px;
+    justify-content: left;
+    padding: 5px 20px;
+}
+.especialidades-tabla td{
+    padding: 5px 20px;
+    font-size: large;
 }
 
 .tabs {
@@ -536,11 +564,17 @@ button[class ^=navbar]:hover {
     align-items: center;
     justify-content: right;
     padding-right: 10rem;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
 .divContent {
     grid-area: 1 / 2 / 2 / 3;
     padding: 5rem;
+}
+.divContent h3{
+font-size: 25px;
 }
 
 /*FIN de Horario*/
@@ -617,6 +651,7 @@ button[class ^=navbar]:hover {
     width: 80px;
     margin: auto;
 }
+
 .servicios-grid img {
     width: 40%;
 
@@ -779,18 +814,40 @@ button[class ^=navbar]:hover {
 .package-service-item .btn {
     margin: 4rem 0;
 }
-/* --------- INICIO reconocimientos ------ */
 
-.contenedor-r{
+/* --------- INICIO reconocimientos ------ */
+.reconocimiento{
+    margin: 0 auto;
+    padding: 10rem;
+    background-color: aliceblue;
+}
+.contenedor-r {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: (1fr, 1fr);
     grid-template-rows: 1fr;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    }
-    
-    .texto-r { grid-area: 1 / 1 / 2 / 2; }
-    .imagen-r { grid-area: 1 / 2 / 2 / 3; }
+    margin: 0 auto;
+}
+.reconocimiento h1 {
+    font-size: 50px;
+    text-align: center;
+
+}
+.texto-r {
+    grid-area: 1 / 1 / 2 / 2;
+    margin-left: 120px;
+}
+.texto-r p{
+    padding: 5rem;
+    font-size: 17px;
+}
+
+.imagen-r {
+    grid-area: 1 / 2 / 2 / 3;
+    width: 50%;
+    margin: 0 auto;
+}
 
 
 /* --------- FIN reconocimientos ------ */
@@ -1065,10 +1122,24 @@ button[class ^=navbar]:hover {
     .info-capacidad {
         grid-template-columns: repeat(1, 1fr);
     }
+   
 
 }
 
-
+@media screen and (max-width: 768px){
+    .contenedor-r{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .imagen-r{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .texto-r{
+        grid-row: 2;
+        grid-column: 1;
+    }
+}
 
 @media(min-width: 992px) {
     .header-inner {
@@ -1360,39 +1431,40 @@ button[class ^=navbar]:hover {
 .testimonial-section {
     padding: 50px 0;
     background-color: #f7f7f7;
-  }
-  
-  .testimonial-slider {
+}
+
+.testimonial-slider {
     max-width: 800px;
     margin: 0 auto;
-  }
-  
-  .testimonial-content {
+}
+
+.testimonial-content {
     text-align: center;
-  }
-  
-  .testimonial-content img {
+}
+
+.testimonial-content img {
     width: 200px;
     height: auto;
     border-radius: 50%;
     margin-bottom: 20px;
-  }
-  
-  .testimonial-content p {
+}
+
+.testimonial-content p {
     font-size: 18px;
     line-height: 1.5;
     color: #555;
-  }
-  
+}
 
-.testimonios{
-    position:relative;
-    min-height: 100vh;
+
+.testimonios {
+    position: relative;
+    min-height: 70vh;
     width: 100%;
-    background-color: #070c0d;
+    background-color: #f8f8f8;
     overflow: hidden;
 }
-.testimonial-section::before{
+
+.testimonial-section::before {
     position: absolute;
     content: '';
     width: 2000px;
@@ -1401,6 +1473,7 @@ button[class ^=navbar]:hover {
     border-radius: 50%;
     background: #3b7cf5;
 }
+
 .testimonios .heading {
     display: inline-block;
     position: relative;
@@ -1412,8 +1485,8 @@ button[class ^=navbar]:hover {
     font-weight: 800;
 }
 
-}
-.testimonios .heading::before{
+
+.testimonios .heading::before {
     position: absolute;
     content: '';
     width: 15%;
@@ -1421,48 +1494,54 @@ button[class ^=navbar]:hover {
     left: 50%;
     transform: translateX(-50%);
     bottom: 25%;
-    background: #393939 ;
+    background: #393939;
 }
-.testimonios .heading b{
+
+.testimonios .heading b {
     color: #fff;
 
 }
-.wrapper{
+
+.wrapper {
     width: 100%;
-    display: flex ;
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
-.contenedor-testimonios{
-    position:relative;
+
+.contenedor-testimonios {
+    position: relative;
     width: 350px;
     color: #fff;
-    background: #222;
+    background: #696969;
     margin: 40px 10px;
     padding: 30px 20px;
     border-radius: 3px;
     transition: 0.3s ease;
-    
+    box-shadow: 0px 4px 4px rgba(85, 85, 85, 0.45);
+
 }
 
-.profile{
+.profile {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    top:-10%;
+    top: -10%;
     width: 100%;
     display: block;
 }
-.imgBox{
+
+.imgBox {
     position: relative;
     height: 100px;
-    width:100px;
+    width: 100px;
     margin: auto;
     border: 8px solid #070c0d;
     border-radius: 50%;
     overflow: hidden;
 }
-.imgBox img{
+
+.imgBox img {
     position: absolute;
     height: 100%;
     width: 100%;
@@ -1472,43 +1551,45 @@ button[class ^=navbar]:hover {
     object-fit: cover;
     transition: 0.3s ease;
 }
-.contenedor-testimonios h2{
+
+.contenedor-testimonios h2 {
     padding: 5px 0;
     text-transform: capitalize;
     color: #fff;
     letter-spacing: 1px;
     text-align: center;
 }
-.contenedor-testimonios p{
+
+.contenedor-testimonios p {
     margin-top: 50px;
-   color: #fff;
-   padding:  0 8px;
-   font-size: 15px;
-   opacity: 0.8;
+    color: #fff;
+    padding: 0 8px;
+    font-size: 15px;
+    opacity: 0.8;
 }
-.contenedor-testimonios .left{
+
+.contenedor-testimonios .left {
     font-size: 30px;
     display: block;
     text-align: left;
     color: #3b7cf5;
 }
-.contenedor-testimonios .right{
+
+.contenedor-testimonios .right {
     font-size: 30px;
     display: block;
     text-align: right;
     color: #3b7cf5;
 }
 
-.contenedor-testimonios .social{
+.contenedor-testimonios .social {
     width: 100%;
 }
-.contenedor-testimonios .social i{
+
+.contenedor-testimonios .social i {
     font-size: 1.2em;
     color: #fff;
     padding: 8px;
-    background: rgb(255, 255, 255,0.08);
+    background: rgba(255, 255, 255, 0.671);
     border-radius: 4px;
-}
-.social i:hover{
-    color:
 }
