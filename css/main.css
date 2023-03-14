@@ -19,6 +19,7 @@
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+
 }
 
 html {
@@ -453,7 +454,8 @@ button[class ^=navbar]:hover {
     margin: 0 auto;
     padding-top: 2px;
 }
-.texto-infTitulo{
+
+.texto-infTitulo {
     position: absolute;
     top: 15%;
     left: 37%;
@@ -462,9 +464,10 @@ button[class ^=navbar]:hover {
     color: var(--light-color);
     padding: 10px;
     width: 250px;
-   
+
     font-size: 25px;
 }
+
 .divImageninfo {
     grid-area: 1 / 1 / 2 / 2;
     width: 85%;
@@ -502,7 +505,8 @@ button[class ^=navbar]:hover {
     justify-content: left;
     padding: 5px 20px;
 }
-.especialidades-tabla td{
+
+.especialidades-tabla td {
     padding: 5px 20px;
     font-size: large;
 }
@@ -573,8 +577,9 @@ button[class ^=navbar]:hover {
     grid-area: 1 / 2 / 2 / 3;
     padding: 5rem;
 }
-.divContent h3{
-font-size: 25px;
+
+.divContent h3 {
+    font-size: 25px;
 }
 
 /*FIN de Horario*/
@@ -740,14 +745,8 @@ font-size: 25px;
     margin-top: 14rem;
 }
 
-.div1service {
-    grid-area: 1 / 1 / 2 / 2;
-}
 
-.div2service {
-    grid-area: 1 / 2 / 2 / 3;
-}
-
+/* Servicios */
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -757,6 +756,15 @@ font-size: 25px;
     padding: 5rem;
 }
 
+.div1service {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.div2service {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+/* Servicios */
 .package-service {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.85)), to(rgba(0, 80, 213, 0.95))), url('../images/package-service-img.jpg') center/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
@@ -816,38 +824,48 @@ font-size: 25px;
 }
 
 /* --------- INICIO reconocimientos ------ */
-.reconocimiento{
+.reconocimiento {
     margin: 0 auto;
-    padding: 10rem;
-    background-color: aliceblue;
+    background-color: rgb(255, 255, 255);
 }
+
 .contenedor-r {
     display: grid;
-    grid-template-columns: (1fr, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    margin: 0 auto;
+    grid-template-columns: 1fr 2fr; 
+    gap: 0px 0px;
+    margin: 0 auto; 
+    width: auto;
+    max-width: 1000px;
+    height: auto;
 }
+.imagen-r { 
+    width: 100%;
+    margin: 0 auto; 
+ 
+}
+.texto-r {
+    width: 100%;
+   padding-left: 10px;
+   padding-right: 10px;
+}
+
+
 .reconocimiento h1 {
     font-size: 50px;
     text-align: center;
-
-}
-.texto-r {
-    grid-area: 1 / 1 / 2 / 2;
-    margin-left: 120px;
-}
-.texto-r p{
-    padding: 5rem;
-    font-size: 17px;
 }
 
-.imagen-r {
-    grid-area: 1 / 2 / 2 / 3;
-    width: 50%;
+.reconocimiento hr {
+    width: 30%;
+    color: #0050d5;
+    border-width: 2.5px;
     margin: 0 auto;
 }
+
+.texto-r p {
+    font-size: 18px;   
+}
+
 
 
 /* --------- FIN reconocimientos ------ */
@@ -1122,20 +1140,22 @@ font-size: 25px;
     .info-capacidad {
         grid-template-columns: repeat(1, 1fr);
     }
-   
+
 
 }
 
-@media screen and (max-width: 768px){
-    .contenedor-r{
+@media screen and (max-width: 768px) {
+    .contenedor-r {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr;
     }
-    .imagen-r{
+
+    .imagen-r {
         grid-row: 1;
         grid-column: 1;
     }
-    .texto-r{
+
+    .texto-r {
         grid-row: 2;
         grid-column: 1;
     }
@@ -1592,4 +1612,135 @@ font-size: 25px;
     padding: 8px;
     background: rgba(255, 255, 255, 0.671);
     border-radius: 4px;
+}
+
+
+/* Estilo de la ventana modal */
+.modal {
+    display: none;
+    /* Oculta la ventana modal por defecto */
+    position: fixed;
+    /* Posición fija para mantener la ventana modal en la pantalla */
+    z-index: 1;
+    /* Para que la ventana modal aparezca por encima del resto del contenido */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    /* Permite que el usuario pueda desplazarse si el contenido de la ventana modal es demasiado grande */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Fondo oscuro semitransparente para destacar la ventana modal */
+}
+
+/* Estilo del contenido de la ventana modal */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    /* Fondo blanco para el contenido de la ventana modal */
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Estilo del botón para cerrar la ventana modal */
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* /////////PESTAÑA CONTACTENOS///////// */
+.emptyContainer{
+    width: 120px;
+    height: 120px;
+}
+.contenedor-contact {
+    width: 500px;
+    height: 500px;
+    padding-top: 10rem;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contenedor-contact h1 {}
+
+.contenedor-contact h2 {}
+
+.contenedor-contact p {}
+
+/* ///////////////////////////////////////////////////// */
+.grid-container1{
+   
+}
+.Mision { grid-area: Mision; }
+.Vision { grid-area: Vision; }
+
+
+.nosotros-container{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100hv;
+}
+
+.nosotros-container figure{
+    position: relative;
+    height: 450px;
+    width: 550px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.nosotros-container figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;   
+}
+.nosotros-container figure .capa{
+position: absolute;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgba(11, 103, 123, 0.6);
+transition: all 500ms ease-out;
+opacity: 0;
+visibility: hidden;
+text-align: center;
+}
+.nosotros-container figure:hover > .capa{
+    opacity: 1;
+    visibility: visible;
+}
+.nosotros-container figure:hover > .capa h3{
+    margin-top: 70px;
+    margin-bottom: 15px;
+}
+.nosotros-container figure .capa h3{
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 250px;
+    transition: all 500ms ease-out;
+}
+.nosotros-container figure .capa p{
+    color: #fff;
+    font-size: 15px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 420px;
+    margin: auto;
+
 }

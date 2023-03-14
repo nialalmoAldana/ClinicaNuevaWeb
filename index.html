@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="css/normalize.css">
     <!-- custom css -->
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="whats.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-     <link rel="stylesheet" href="whats2.css">
+    <link rel="stylesheet" href="css/whats2.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </head>
 
 <body>
+
 
 
     <!-- INICIO de header -->
@@ -48,25 +50,24 @@
                     </button>
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Inicio</a>
+                            <a href="index.html" class="nav-link ">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Nosotros</a>
+                            <a href="nosotros.html" class="nav-link active">Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Servicios</a>
+                            <a href="#" class="nav-link">Citas</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Horarios</a>
+                            <a href="https://www.psepagos.co/PSEHostingUI/ShowTicketOffice.aspx?ID=11386"
+                                class="nav-link">Pagos</a>
+
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Informacion</a>
+                            <a href="contactenos.html" class="nav-link">Contactenos</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">Contactenos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Blog</a>
+                            <a href="https://fonts.google.com/" class="nav-link">Blog</a>
                         </li>
                     </ul>
                     <div class="search-bar">
@@ -85,17 +86,24 @@
     </header>
     <!-- FIN de header -->
 
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img src="tu-banner.jpg" alt="Banner de mi empresa">
+        </div>
+    </div>
+
     <!-- INICIO Slider de imagenes banner -->
     <section id="slider">
         <div class="slider-container">
             <div class="slider-image">
-                <img src="images/banner-1.jpg" alt="Slider Image 1">
+                <img src="images/banner-1.PNG" alt="Slider Image 1">
             </div>
             <div class="slider-image">
-                <img src="images/banner-2.jpg" alt="Slider Image 2">
+                <img src="images/banner-2.PNG" alt="Slider Image 2">
             </div>
             <div class="slider-image">
-                <img src="images/banner-3.jpg" alt="Slider Image 3">
+                <img src="images/banner-2.PNG" alt="Slider Image 3">
             </div>
         </div>
         <div class="slider-controls">
@@ -156,7 +164,17 @@
 
             </div>
         </section>
-        <!-- END INICIO informacion capacidad Clinica --> -->
+        <!-- END INICIO informacion capacidad Clinica -->
+
+
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                    style="stroke: none; fill: rgba(218, 218, 218, 0.322);">
+                </path>
+            </svg>
+        </div>
+
 
         <!-- Inicio Seccion Especialidades-->
         <section class="especialidades">
@@ -299,9 +317,15 @@
             </div>
         </section>
         <!-- FIN section Horario de visitas -->
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgba(202, 202, 202, 0.37);">
+                </path>
+            </svg>
+        </div>
 
-
-        <!-- package services section -->
+        <!-- package services section ////////////////////////////////////////////////////////////////////////////////-->
         <section id="package-service" class="package-service py text-center">
 
             <div class="container">
@@ -355,16 +379,26 @@
                 </div>
             </div>
         </section>
-        <!-- end of package services section -->
+        <!-- end of package services section //////////////////////////////////////////////////////////////////////////////////// -->
+
+
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                    style="height:30%; stroke: none; fill: rgba(225, 225, 235, 0.322);">
+                </path>
+            </svg>
+        </div>
 
 
         <!-- services section -->
         <section class="reconocimiento bg-white">
-            <h1 class="text-blue">Reconocimientos
+            <h1 class="text-blue text-shadow">Reconocimientos
                 <hr>
             </h1>
+
             <div class="contenedor-r">
-                <div class="imagen-r"><img src="images/reconocimiento_ilustracion.png"> </div>
+                <div class="imagen-r"><img src="images/medalla.avif"> </div>
                 <div class="texto-r text-shadow">
                     <p>
                         Nos sentimos orgullosos de ser reconocidos como una de las clínicas líderes en Colombia en el
@@ -381,7 +415,13 @@
             </div>
         </section>
         <!-- end of services section -->
-
+        <div style="height: 150px; overflow: hidden;">
+            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: rgba(238, 238, 238, 0.37);">
+                </path>
+            </svg>
+        </div>
         <section class="testimonios bg-white">
             <div class="heading"><b>Nuestros</b>Testimonios</div>
             <div class="wrapper">
@@ -390,10 +430,13 @@
                         <div class="imgBox">
                             <img src="images/logo.png">
                         </div>
-                        <h2>Person 1</h2>
+                        <h2>claudia</h2>
                     </div>
-                    <p><span class="fa fa-quote-left left"></span>Excelente servicio. las enfermeras son muy diligentes y amables, estuvo muy pendiente la persona del servicio al paciente. La atencion que me dieron me ayudo a tener una buena recuperacion. Muy agradecida con medicos, enfermeras y camilleros <span
-                            class="fa fa-quote-right right"></span></p>
+                    <p><span class="fa fa-quote-left left"></span>Excelente servicio. las enfermeras son muy diligentes
+                        y amables, estuvo muy pendiente la persona del servicio al paciente. La atencion que me dieron
+                        me ayudo a tener una buena recuperacion. Muy agradecida con medicos, enfermeras y camilleros
+                        <span class="fa fa-quote-right right"></span>
+                    </p>
                     <div class="social"></div>
                 </div>
                 <div class="contenedor-testimonios">
@@ -401,10 +444,10 @@
                         <div class="imgBox">
                             <img src="images/logo.png">
                         </div>
-                        <h2 class="text-blue">Person 1</h2>
+                        <h2 class="text-blue">Geraldine</h2>
                     </div>
-                    <p><span class="fa fa-quote-left left"></span>Muy buen sercicio, lugar limpio y personal atento y calido.<span
-                            class="fa fa-quote-right right"></span></p>
+                    <p><span class="fa fa-quote-left left"></span>Muy buen sercicio, lugar limpio y personal atento y
+                        calido.<span class="fa fa-quote-right right"></span></p>
                     <div class="social"></div>
                 </div>
                 <div class="contenedor-testimonios">
@@ -412,10 +455,11 @@
                         <div class="imgBox">
                             <img src="images/logo.png">
                         </div>
-                        <h2>Person 1</h2>
+                        <h2>Patricia</h2>
                     </div>
-                    <p><span class="fa fa-quote-left left"></span>Excelente servicios son profesionales y lo mas importante la calidad humana que tienen todos los que trabajan en la clinica, les agradezco de corazon, me atendieron super bien!<span
-                            class="fa fa-quote-right right"></span></p>
+                    <p><span class="fa fa-quote-left left"></span>Excelente servicios son profesionales y lo mas
+                        importante la calidad humana que tienen todos los que trabajan en la clinica, les agradezco de
+                        corazon, me atendieron super bien!<span class="fa fa-quote-right right"></span></p>
                     <div class="social"></div>
                 </div>
                 <div class="contenedor-testimonios">
@@ -423,12 +467,10 @@
                         <div class="imgBox">
                             <img src="images/logo.png">
                         </div>
-                        <h2>Person 1</h2>
+                        <h2>Juan</h2>
                     </div>
-                    <p><span class="fa fa-quote-left left"></span>hola dfgsfgsdfg sfg sdfgs sdf sdfg sdfg sdfgs fdg sdfg
-                        sdfg dfgdsfgdfgsdfgs df df fdgdfsg dfgs dfsgsdfgsdf dfgdfs dfg dfg dfg dsdfgsdfgsdfg dfgfdg
-                        dsgsdgfdfs dfgfdsg sdfg dfgfdsg sdfg fdg sdfgsdfgsdfghsdfgsdf<span
-                            class="fa fa-quote-right right"></span></p>
+                    <p><span class="fa fa-quote-left left"></span>Salvaron mi vida, estare agradecida de por vida con la
+                        clinica nueva<span class="fa fa-quote-right right"></span></p>
                     <div class="social"></div>
                 </div>
             </div>
@@ -443,11 +485,12 @@
                     <h2>Noticias</h2>
                 </div>
                 <div class="posts-inner grid">
+
                     <article class="post-item bg-white">
                         <div class="img">
                             <img src="images/post-1.jpg">
                         </div>
-                        <div class="content">
+                        <div class="content box1">
                             <h4>What is Lorem Ipsum?</h4>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
                                 voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
@@ -465,7 +508,7 @@
                         <div class="img">
                             <img src="images/post-2.jpg">
                         </div>
-                        <div class="content">
+                        <div class="content box2">
                             <h4>What is Lorem Ipsum?</h4>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
                                 voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
@@ -483,7 +526,7 @@
                         <div class="img">
                             <img src="images/post-3.jpg">
                         </div>
-                        <div class="content">
+                        <div class="content box3">
                             <h4>What is Lorem Ipsum?</h4>
                             <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
                                 voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
@@ -535,34 +578,34 @@
         <!-- end of contact section -->
 
         <div class="nav-bottom">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-       rel="stylesheet">
-             <div class="popup-whatsapp fadeIn">
-                 <div class="content-whatsapp -top"><button type="button" class="closePopup">
-                       <i class="material-icons icon-font-color">close</i>
-                     </button> 
-                   
-                    <p>  <img src="secretary.png" width="50">  Hola, ¿en que podemos ayudarle? </p>
-                    
-                 </div>
-                 <div class="content-whatsapp -bottom">
-                   <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
-                    
-                    
-                   
-           
-                     <button class="send-msPopup" id="send-btn" type="button">
-                         <i class="material-icons icon-font-color--black">send</i>
-                     </button>
- 
-                 </div>
-             </div>
-             <button type="button" id="whats-openPopup" class="whatsapp-button">
-                 <div class="float" >
-   <i class="fa fa-whatsapp my-float"></i></div>
-             </button>
-             <div class="circle-anime"></div>
-         </div>
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <div class="popup-whatsapp fadeIn">
+                <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                        <i class="material-icons icon-font-color">close</i>
+                    </button>
+
+                    <p> <img src="images/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
+
+                </div>
+                <div class="content-whatsapp -bottom">
+                    <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                    <button class="send-msPopup" id="send-btn" type="button">
+                        <i class="material-icons icon-font-color--black">send</i>
+                    </button>
+
+                </div>
+            </div>
+            <button type="button" id="whats-openPopup" class="whatsapp-button">
+                <div class="float">
+                    <i class="fa fa-whatsapp my-float"></i>
+                </div>
+            </button>
+            <div class="circle-anime"></div>
+        </div>
 
 
     </main>

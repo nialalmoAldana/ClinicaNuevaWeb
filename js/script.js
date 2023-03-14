@@ -77,7 +77,7 @@ function startSlider() {
       currentIndex++;
     }
     sliderImages[currentIndex].classList.add('active');
-  }, 3000);
+  }, 10000);
 }
 
 function resetSlider() {
@@ -136,4 +136,38 @@ var swiper = new Swiper('.testimonial-slider', {
       spaceBetween: 30,
     },
   }
+});
+
+
+
+window.sr = ScrollReveral()
+sr.reveral(".box1",{
+  origin: 'left',
+  interval: 106,
+  duration: 2000,
+  distance: '150%'
+})
+
+sr.reveral(".box2",{
+  origin: 'left',
+  interval: 106,
+  duration: 2000,
+  distance: '150%'
+})
+
+
+// Obtiene la ventana modal
+var modal = document.getElementById("myModal");
+
+// Obtiene el botón para cerrar la ventana modal
+var closeBtn = modal.querySelector(".close");
+
+// Muestra la ventana modal automáticamente después de 2 segundos
+setTimeout(function() {
+  modal.style.display = "block";
+}, 2000);
+
+// Cierra la ventana modal al hacer clic en la "x"
+closeBtn.addEventListener("click", function() {
+  modal.style.display = "none";
 });
