@@ -13,16 +13,16 @@
     <!-- normalize css -->
     <link rel="stylesheet" href="css/normalize.css">
     <!-- custom css -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/whats2.css">
+    <!-- jquery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
 <body>
-
-
 
     <!-- INICIO de header -->
     <header class="header bg-white">
@@ -86,12 +86,7 @@
     </header>
     <!-- FIN de header -->
 
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <img src="tu-banner.jpg" alt="Banner de mi empresa">
-        </div>
-    </div>
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
 
     <!-- INICIO Slider de imagenes banner -->
     <section id="slider">
@@ -113,8 +108,8 @@
     </section>
     <!-- FIN de Slide -->
 
+    <!-- INICIO Acerca de la clinica -->
     <main>
-        <!-- INICIO Acerca de la clinica -->
         <section id="about">
             <div class="container-infoclinica">
                 <div class="grid-infoclinica text-center">
@@ -122,8 +117,6 @@
                         <div class="texto-infTitulo">Clinica Nueva</div>
                         <img src="images/clinicafoto.avif" alt="imagen">
                     </div>
-
-
                     <div class="divtextoinfo text-shadow">
                         <p>La Clínica Nueva, es una obra de la Congregación de Dominicas de Santa Catalina de Sena,
                             primera comunidad religiosa fundada en 1880 en Villa de Leyva (Boyacá).
@@ -135,482 +128,439 @@
                 </div>
             </div>
         </section>
-        <!-- FIN Acerca de la clinica -->
-
-
-        <!-- INICIO informacion capacidad Clinica -->
-        <section id="banner-one" class="banner-one text-center">
-            <div class="info-capacidad container text-white grid">
-                <div>
-                    <h1>64</h1>
-                    <h3>Camas de hospitalización</h3>
-                </div>
-                <div>
-                    <h1>15</h1>
-                    <h3>Camas de unidad de cuidado intermedio adulto</h3>
-                </div>
-                <div>
-                    <h1>19</h1>
-                    <h3>Salas procedimientos</h3>
-                </div>
-                <div>
-                    <h1>5</h1>
-                    <h3>Salas de quirofano</h3>
-                </div>
-                <div>
-                    <h1>2</h1>
-                    <h3>Salas de procedimientos</h3>
-                </div>
-
-            </div>
-        </section>
-        <!-- END INICIO informacion capacidad Clinica -->
-
-
-        <div style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-                    style="stroke: none; fill: rgba(218, 218, 218, 0.322);">
-                </path>
-            </svg>
-        </div>
-
-
-        <!-- Inicio Seccion Especialidades-->
-        <section class="especialidades">
-            <h2 class="text-center text-blue text-shadow">Especialidades</h2>
-            <div class="tabs">
-                <button class="tab-link active" data-tab="general">Apoyo diagnostico</button>
-                <button class="tab-link" data-tab="uci">Especialidades clinicas</button>
-                <button class="tab-link" data-tab="apoyo">Especialidades quirurgicas</button>
-            </div>
-            <div class="tab-content  text-shadow active" id="general">
-
-                <table class="especialidades-tabla text-shadow">
-                    <tbody>
-                        <tr>
-                            <td>Electrodiagnóstico</td>
-                            <td>Endoscopia digestiva</td>
-                        </tr>
-                        <tr>
-                            <td>Fisioterapia</td>
-                            <td>Fonoaudiología </td>
-                        </tr>
-                        <tr>
-                            <td>Neumología / fibrobroncoscopia</td>
-                            <td>Radiología / imágenes diagnósticas</td>
-                        </tr>
-                        <tr>
-                            <td>Servicio farmacéutico </td>
-                            <td>Terapia ocupacional</td>
-                        </tr>
-                        <tr>
-                            <td>Terapia respiratoria</td>
-                            <td>Hemodinamia</td>
-                        </tr>
-                        <tr>
-                            <td>Hemodinamia</td>
-                            <td>Ultrasonido</td>
-                        </tr>
-
-                    </tbody>
-                </table>
-
-
-            </div>
-            <div class=" tab-content text-shadow " id="uci">
-
-                <table class="especialidades-tabla">
-                    <tbody>
-                        <tr>
-                            <td>Anestesia</td>
-                            <td>Cirugía general</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía plástica y estética</td>
-                            <td>Cirugía vascular</td>
-                        </tr>
-                        <tr>
-                            <td>Dermatología</td>
-                            <td>Endocrinología</td>
-                        </tr>
-                        <tr>
-                            <td>Gastroenterología </td>
-                            <td>Medicina física y rehabilitación</td>
-                        </tr>
-                        <tr>
-                            <td>Medicina interna</td>
-                            <td>Neumología</td>
-                        </tr>
-                        <tr>
-                            <td>Ortopedia y traumatología</td>
-                            <td>Psiquiatría</td>
-                        </tr>
-                        <tr>
-                            <td>Urología</td>
-
-                        </tr>
-
-                    </tbody>
-                </table>
-
-            </div>
-
-            <div class=" tab-content text-shadow " id="apoyo">
-                <table class="especialidades-tabla">
-                    <tbody>
-                        <tr>
-                            <td>Cirugía de mano</td>
-                            <td>Cirugía de tórax</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía dermatológica</td>
-                            <td>Cirugía gastrointestinal</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía general</td>
-                            <td>Cirugía maxilofacial</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía neurológica </td>
-                            <td>Cirugía oncológica</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía ortopédica</td>
-                            <td>Cirugía otorrinolaringología</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía plástica y estética</td>
-                            <td>Cirugía vascular y angiológica</td>
-                        </tr>
-                        <tr>
-                            <td>Cirugía urológica</td>
-                            <td>Trasplante de tejido osteomuscula</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-        <!-- FIN section Especialidades -->
-
-        <!-- IINICIO section Horario de visitas -->
-        <section class=" horario-visitas">
-            <div class="grid-horario">
-                <div class="divTitulo text-blue">
-                    <h2 class="text-center text-shadow">Horario de visitas</h2>
-                </div>
-                <div class="divContent">
-                    <h3 class="text-blue text-shadow">Hospitalizacion General o Cuidado Intermedio</h3>
-                    <p><span class="text-blue text-shadow"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Habitacion:&nbsp;
-                        </span>&nbsp;302 a 335 de 8:00am a 7:00pm<br></p>
-                    <p>
-
-
-
-                    </p>
-                    <h3 class="text-blue text-shadow"><br><br>Unidad de cuidados intensivos</h3>
-                    <p><span class="text-blue text-shadow"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad:&nbsp;</span>&nbsp;
-                        201 a 219 de 11:00am a 1:00pm</p>
-                    <p><span class="text-blue text-shadow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad:&nbsp;</span>&nbsp; 302
-                        a 335 de 3:00pm a 7:00pm</p>
-                </div>
-            </div>
-        </section>
-        <!-- FIN section Horario de visitas -->
-        <div style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgba(202, 202, 202, 0.37);">
-                </path>
-            </svg>
-        </div>
-
-        <!-- package services section ////////////////////////////////////////////////////////////////////////////////-->
-        <section id="package-service" class="package-service py text-center">
-
-            <div class="container">
-                <div class="package-service-head text-white">
-                    <h2>Servicios</h2>
-                    <p class="text text-lg"></p>
-                </div>
-
-                <div class="servicios-grid">
-                    <div class="div1servicio package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-stethoscope fa-2x"></i>
-                        </div>
-                        <h3 class="text-blue text-shadow">Servicios Ambulatorios</h3>
-                        <table class="customTable">
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <li>Consulta externa</li>
-                                        <li>Imagenes diagnosticas</li>
-                                        <li>Servicio farmaceutico</li>
-                                        <li>Endoscopia digestiva</li>
-                                        <li>Neumologia</li>
-                                    </td>
-                                    <td>
-                                        <li>Fibroscopia</li>
-                                        <li>Cardiologia</li>
-                                        <li>Terapia fisica</li>
-                                        <li>Fonoauiologia</li>
-                                        <li>Terapia ocupacional</li>
-                                        <li>Terapia respiratoria</li>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="div2servicio package-service-item bg-white">
-                        <div class="icon flex">
-                            <i class="fas fa-hospital fa-2x"></i>
-                        </div>
-                        <h3 class="text-blue text-shadow">Servicios hospitalarios</h3>
-                        <ul>
-                            <li>Urgencias</li>
-                            <li>Hospitalizacion adultos</li>
-                            <li>cuidados intensivos</li>
-                            <li>Cuidados intermedios adultos</li>
-                            <li>Cirugía</li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- end of package services section //////////////////////////////////////////////////////////////////////////////////// -->
-
-
-        <div style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
-                    style="height:30%; stroke: none; fill: rgba(225, 225, 235, 0.322);">
-                </path>
-            </svg>
-        </div>
-
-
-        <!-- services section -->
-        <section class="reconocimiento bg-white">
-            <h1 class="text-blue text-shadow">Reconocimientos
-                <hr>
-            </h1>
-
-            <div class="contenedor-r">
-                <div class="imagen-r"><img src="images/medalla.avif"> </div>
-                <div class="texto-r text-shadow">
-                    <p>
-                        Nos sentimos orgullosos de ser reconocidos como una de las clínicas líderes en Colombia en el
-                        tratamiento de enfermedades de la columna y el sistema nervioso central. <br>Nuestro compromiso
-                        radica en brindar atención especializada y excelencia en el tratamiento quirúrgico de
-                        enfermedades de la columna vertebral, tanto degenerativas como traumáticas.
-                        Además, nos enfocamos en la investigación y el desarrollo de nuevas técnicas quirúrgicas, y en
-                        la formación de nuevos profesionales de la salud en este campo. De esta manera, podemos ofrecer
-                        a nuestros pacientes los tratamientos más avanzados y personalizados, basados en los últimos
-                        avances científicos y tecnológicos.
-                        Agradecemos su elección y confianza en nosotros.
-                    </p>
-                </div>
-            </div>
-        </section>
-        <!-- end of services section -->
-        <div style="height: 150px; overflow: hidden;">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgba(238, 238, 238, 0.37);">
-                </path>
-            </svg>
-        </div>
-        <section class="testimonios bg-white">
-            <div class="heading"><b>Nuestros</b>Testimonios</div>
-            <div class="wrapper">
-                <div class="contenedor-testimonios grid">
-                    <div class="profile">
-                        <div class="imgBox">
-                            <img src="images/logo.png">
-                        </div>
-                        <h2>claudia</h2>
-                    </div>
-                    <p><span class="fa fa-quote-left left"></span>Excelente servicio. las enfermeras son muy diligentes
-                        y amables, estuvo muy pendiente la persona del servicio al paciente. La atencion que me dieron
-                        me ayudo a tener una buena recuperacion. Muy agradecida con medicos, enfermeras y camilleros
-                        <span class="fa fa-quote-right right"></span>
-                    </p>
-                    <div class="social"></div>
-                </div>
-                <div class="contenedor-testimonios">
-                    <div class="profile">
-                        <div class="imgBox">
-                            <img src="images/logo.png">
-                        </div>
-                        <h2 class="text-blue">Geraldine</h2>
-                    </div>
-                    <p><span class="fa fa-quote-left left"></span>Muy buen sercicio, lugar limpio y personal atento y
-                        calido.<span class="fa fa-quote-right right"></span></p>
-                    <div class="social"></div>
-                </div>
-                <div class="contenedor-testimonios">
-                    <div class="profile">
-                        <div class="imgBox">
-                            <img src="images/logo.png">
-                        </div>
-                        <h2>Patricia</h2>
-                    </div>
-                    <p><span class="fa fa-quote-left left"></span>Excelente servicios son profesionales y lo mas
-                        importante la calidad humana que tienen todos los que trabajan en la clinica, les agradezco de
-                        corazon, me atendieron super bien!<span class="fa fa-quote-right right"></span></p>
-                    <div class="social"></div>
-                </div>
-                <div class="contenedor-testimonios">
-                    <div class="profile">
-                        <div class="imgBox">
-                            <img src="images/logo.png">
-                        </div>
-                        <h2>Juan</h2>
-                    </div>
-                    <p><span class="fa fa-quote-left left"></span>Salvaron mi vida, estare agradecida de por vida con la
-                        clinica nueva<span class="fa fa-quote-right right"></span></p>
-                    <div class="social"></div>
-                </div>
-            </div>
-
-        </section>
-
-
-        <!-- posts section -->
-        <section id="posts" class="posts py">
-            <div class="container">
-                <div class="section-head">
-                    <h2>Noticias</h2>
-                </div>
-                <div class="posts-inner grid">
-
-                    <article class="post-item bg-white">
-                        <div class="img">
-                            <img src="images/post-1.jpg">
-                        </div>
-                        <div class="content box1">
-                            <h4>What is Lorem Ipsum?</h4>
-                            <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                                voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
-                            </p>
-                            <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
-                                ipsam, quis iure sed nulla.</p>
-                            <div class="info flex">
-                                <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
-                                <small class="text text-sm"><i class="fas fa-comment"></i> 1 comments</small>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="post-item bg-white">
-                        <div class="img">
-                            <img src="images/post-2.jpg">
-                        </div>
-                        <div class="content box2">
-                            <h4>What is Lorem Ipsum?</h4>
-                            <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                                voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
-                            </p>
-                            <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
-                                ipsam, quis iure sed nulla.</p>
-                            <div class="info flex">
-                                <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
-                                <small class="text text-sm"><i class="fas fa-comment"></i> 5 comments</small>
-                            </div>
-                        </div>
-                    </article>
-
-                    <article class="post-item bg-white">
-                        <div class="img">
-                            <img src="images/post-3.jpg">
-                        </div>
-                        <div class="content box3">
-                            <h4>What is Lorem Ipsum?</h4>
-                            <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
-                                voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
-                            </p>
-                            <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
-                                ipsam, quis iure sed nulla.</p>
-                            <div class="info flex">
-                                <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
-                                <small class="text text-sm"><i class="fas fa-comment"></i> 0 comments</small>
-                            </div>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-        <!-- end of posts section -->
-
-        <!-- contact section -->
-        <section id="contact" class="contact py">
-            <div class="container grid">
-                <div class="contact-left">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.0010416188172!2d-74.07105067546958!3d4.634288171042001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2e7e241aa3%3A0x66b2ec0e470ff23b!2sCl.%2045f%20%2316a%20-%2011%2C%20Teusaquillo%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1678193508503!5m2!1ses!2sco"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="contact-right text-white text-center bg-blue">
-                    <div class="contact-head">
-                        <h3 class="lead">Contactanos</h3>
-                        <p class="text text-md">Estamos para brindarte la mejor experiencia.</p>
-                    </div>
-                    <form>
-                        <div class="form-element">
-                            <input type="text" class="form-control" placeholder="Nombre">
-                        </div>
-                        <div class="form-element">
-                            <input type="email" class="form-control" placeholder="correo">
-                        </div>
-                        <div class="form-element">
-                            <textarea rows="5" placeholder="Mensaje" class="form-control"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-white btn-submit">
-                            <i class="fas fa-arrow-right"></i> Enviar Mensaje
-                        </button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <!-- end of contact section -->
-
-        <div class="nav-bottom">
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <div class="popup-whatsapp fadeIn">
-                <div class="content-whatsapp -top"><button type="button" class="closePopup">
-                        <i class="material-icons icon-font-color">close</i>
-                    </button>
-
-                    <p> <img src="images/secretary.png" width="50"> Hola, ¿en que podemos ayudarle? </p>
-
-                </div>
-                <div class="content-whatsapp -bottom">
-                    <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
-
-
-
-
-                    <button class="send-msPopup" id="send-btn" type="button">
-                        <i class="material-icons icon-font-color--black">send</i>
-                    </button>
-
-                </div>
-            </div>
-            <button type="button" id="whats-openPopup" class="whatsapp-button">
-                <div class="float">
-                    <i class="fa fa-whatsapp my-float"></i>
-                </div>
-            </button>
-            <div class="circle-anime"></div>
-        </div>
-
-
     </main>
+    <!-- FIN Acerca de la clinica -->
 
-    <!-- footer  -->
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- INICIO informacion capacidad Clinica -->
+    <section id="banner-one" class="banner-one text-center">
+        <div class="info-capacidad container text-white grid">
+            <div>
+                <h1>96</h1>
+                <h3>Camas de hospitalización</h3>
+            </div>
+            <div>
+                <h1>13</h1>
+                <h3>Camas de unidad de cuidado intermedio adulto</h3>
+            </div>
+            <div>
+                <h1>15</h1>
+                <h3>Camas de cuidado intensivo</h3>
+            </div>
+            <div>
+                <h1>5</h1>
+                <h3>Salas de quirofano</h3>
+            </div>
+            <div>
+                <h1>2</h1>
+                <h3>Salas de procedimientos</h3>
+            </div>
+
+        </div>
+    </section>
+    <!-- END INICIO informacion capacidad Clinica -->
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                style="stroke: none; fill: rgba(240, 248, 255, 1);">
+            </path>
+        </svg>
+    </div>
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- Inicio Seccion Especialidades-->
+    <section class="especialidades">
+        <h2 class="text-center text-blue text-shadow">Especialidades</h2>
+        <div class="tabs">
+            <button class="tab-link active" data-tab="general">Apoyo diagnostico</button>
+            <button class="tab-link" data-tab="uci">Especialidades clinicas</button>
+            <button class="tab-link" data-tab="apoyo">Especialidades quirurgicas</button>
+        </div>
+        <div class="tab-content  text-shadow active" id="general">
+
+            <table class="especialidades-tabla text-shadow">
+                <tbody>
+                    <tr>
+                        <td>Electrodiagnóstico</td>
+                        <td>Endoscopia digestiva</td>
+                    </tr>
+                    <tr>
+                        <td>Fisioterapia</td>
+                        <td>Fonoaudiología </td>
+                    </tr>
+                    <tr>
+                        <td>Neumología / fibrobroncoscopia</td>
+                        <td>Radiología / imágenes diagnósticas</td>
+                    </tr>
+                    <tr>
+                        <td>Servicio farmacéutico </td>
+                        <td>Terapia ocupacional</td>
+                    </tr>
+                    <tr>
+                        <td>Terapia respiratoria</td>
+                        <td>Hemodinamia</td>
+                    </tr>
+                    <tr>
+                        <td>Hemodinamia</td>
+                        <td>Ultrasonido</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+        </div>
+        <div class=" tab-content text-shadow " id="uci">
+
+            <table class="especialidades-tabla">
+                <tbody>
+                    <tr>
+                        <td>Anestesia</td>
+                        <td>Cirugía general</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía plástica y estética</td>
+                        <td>Cirugía vascular</td>
+                    </tr>
+                    <tr>
+                        <td>Dermatología</td>
+                        <td>Endocrinología</td>
+                    </tr>
+                    <tr>
+                        <td>Gastroenterología </td>
+                        <td>Medicina física y rehabilitación</td>
+                    </tr>
+                    <tr>
+                        <td>Medicina interna</td>
+                        <td>Neumología</td>
+                    </tr>
+                    <tr>
+                        <td>Ortopedia y traumatología</td>
+                        <td>Psiquiatría</td>
+                    </tr>
+                    <tr>
+                        <td>Urología</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <div class=" tab-content text-shadow " id="apoyo">
+            <table class="especialidades-tabla">
+                <tbody>
+                    <tr>
+                        <td>Cirugía de mano</td>
+                        <td>Cirugía de tórax</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía dermatológica</td>
+                        <td>Cirugía gastrointestinal</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía general</td>
+                        <td>Cirugía maxilofacial</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía neurológica </td>
+                        <td>Cirugía oncológica</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía ortopédica</td>
+                        <td>Cirugía otorrinolaringología</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía plástica y estética</td>
+                        <td>Cirugía vascular y angiológica</td>
+                    </tr>
+                    <tr>
+                        <td>Cirugía urológica</td>
+                        <td>Trasplante de tejido osteomuscula</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <!-- FIN section Especialidades -->
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- IINICIO section Horario de visitas -->
+    <section class=" horario-visitas">
+        <div class="grid-horario">
+            <div class="divTitulo text-blue">
+                <h2 class="text-center text-shadow">Horario de visitas</h2>
+            </div>
+            <div class="divContent">
+                <h3 class="text-blue text-shadow">Hospitalizacion General o Cuidado Intermedio</h3>
+                <p><span class="text-blue text-shadow"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Habitacion:&nbsp;
+                    </span>&nbsp;302 a 335 de 8:00am a 7:00pm<br></p>
+                <p>
+
+
+
+                </p>
+                <h3 class="text-blue text-shadow"><br><br>Unidad de cuidados intensivos</h3>
+                <p><span class="text-blue text-shadow"><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad:&nbsp;</span>&nbsp;
+                    201 a 219 de 11:00am a 1:00pm</p>
+                <p><span class="text-blue text-shadow">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Unidad:&nbsp;</span>&nbsp; 302
+                    a 335 de 3:00pm a 7:00pm</p>
+            </div>
+        </div>
+    </section>
+    <!-- FIN section Horario de visitas -->
+
+    <!--//////////////////////////////////--///////////////////////////////////////////////////-->
+    <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: rgba(240, 248, 255, 1);">
+            </path>
+        </svg>
+    </div>
+    <!--//////////////////////////////////--///////////////////////////////////////////////////-->
+
+    <!-- INICIO seccion Sericios  -->
+    <section id="package-service" class="package-service py text-center">
+
+        <div class="container">
+            <div class="package-service-head text-white">
+                <h2>Servicios</h2>
+                <p class="text text-lg"></p>
+            </div>
+
+            <div class="servicios-grid">
+                <div class="div1servicio package-service-item bg-white">
+                    <div class="icon flex">
+                        <i class="fas fa-stethoscope fa-2x"></i>
+                    </div>
+                    <h3 class="text-blue text-shadow">Servicios Ambulatorios</h3>
+                    <table class="customTable">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <li>Consulta externa</li>
+                                    <li>Imagenes diagnosticas</li>
+                                    <li>Servicio farmaceutico</li>
+                                    <li>Endoscopia digestiva</li>
+                                    <li>Neumologia</li>
+                                </td>
+                                <td>
+                                    <li>Fibroscopia</li>
+                                    <li>Cardiologia</li>
+                                    <li>Terapia fisica</li>
+                                    <li>Fonoauiologia</li>
+                                    <li>Terapia ocupacional</li>
+                                    <li>Terapia respiratoria</li>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="div2servicio package-service-item bg-white">
+                    <div class="icon flex">
+                        <i class="fas fa-hospital fa-2x"></i>
+                    </div>
+                    <h3 class="text-blue text-shadow">Servicios hospitalarios</h3>
+                    <ul>
+                        <li>Urgencias</li>
+                        <li>Hospitalizacion adultos</li>
+                        <li>cuidados intensivos</li>
+                        <li>Cuidados intermedios adultos</li>
+                        <li>Cirugía</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- FIN Seccion Servicios -->
+
+    <!--/////////////////////////////////--////////////////////////////////////////////////////-->
+    <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 150%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
+                style="height:30%; stroke: none; fill: rgba(240, 248, 255, 1);">
+            </path>
+        </svg>
+    </div>
+    <!--/////////////////////////////////--////////////////////////////////////////////////////-->
+
+    <!-- INICIO seccion Reconocimientos -->
+
+    <section class="reconocimiento bg-white">
+        <h1 class="text-blue text-shadow">Reconocimientos
+            <hr>
+        </h1>
+
+        <div class="contenedor-r">
+            <div class="imagen-r"><img src="images/medalla.avif"> </div>
+            <div class="texto-r text-shadow">
+                <p>
+                    Nos sentimos orgullosos de ser reconocidos como una de las clínicas líderes en Colombia en el
+                    tratamiento de enfermedades de la columna y el sistema nervioso central. <br>Nuestro compromiso
+                    radica en brindar atención especializada y excelencia en el tratamiento quirúrgico de
+                    enfermedades de la columna vertebral, tanto degenerativas como traumáticas.
+                    Además, nos enfocamos en la investigación y el desarrollo de nuevas técnicas quirúrgicas, y en
+                    la formación de nuevos profesionales de la salud en este campo. De esta manera, podemos ofrecer
+                    a nuestros pacientes los tratamientos más avanzados y personalizados, basados en los últimos
+                    avances científicos y tecnológicos.
+
+                </p>
+                <p> Agradecemos su elección y confianza en nosotros.</p>
+            </div>
+        </div>
+    </section>
+    <!-- END seccion de RECONOCIMIENTOS-->
+
+    <!--/////////////////////////////////--////////////////////////////////////////////////////-->
+    <div style="height: 150px; overflow: hidden;">
+        <svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;">
+            <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                style="stroke: none; fill: rgba(240, 248, 255, 1);">
+            </path>
+        </svg>
+    </div>
+    <!--/////////////////////////////////--////////////////////////////////////////////////////-->
+
+    <!--INICIO Seccion TESTIMONIOS -->
+
+    <!--FIN  Seccion TESTIMONIOS-->
+   
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- INICIO Seccion de Noticias -->
+    <section id="posts" class="posts py">
+        <div class="container">
+            <div class="section-head">
+                <h2 class="text-shadow text-blue text-center" style="font-size: 40px;">Noticias</h2>
+            </div>
+            <div class="posts-inner grid">
+
+                <article class="post-item bg-white">
+                    <div class="img">
+                        <img src="images/post-1.jpg">
+                    </div>
+                    <div class="content box1">
+                        <h4>What is Lorem Ipsum?</h4>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                            voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
+                        </p>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
+                            ipsam, quis iure sed nulla.</p>
+                        <div class="info flex">
+                            <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
+                            <small class="text text-sm"><i class="fas fa-comment"></i> 1 comments</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-item bg-white">
+                    <div class="img">
+                        <img src="images/post-2.jpg">
+                    </div>
+                    <div class="content box2">
+                        <h4>What is Lorem Ipsum?</h4>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                            voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
+                        </p>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
+                            ipsam, quis iure sed nulla.</p>
+                        <div class="info flex">
+                            <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
+                            <small class="text text-sm"><i class="fas fa-comment"></i> 5 comments</small>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="post-item bg-white">
+                    <div class="img">
+                        <img src="images/post-3.jpg">
+                    </div>
+                    <div class="content box3">
+                        <h4>What is Lorem Ipsum?</h4>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor
+                            voluptas eius recusandae sunt obcaecati esse facere cumque. Aliquid, cupiditate debitis.
+                        </p>
+                        <p class="text text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quia
+                            ipsam, quis iure sed nulla.</p>
+                        <div class="info flex">
+                            <small class="text text-sm"><i class="fas fa-clock"></i> Marzo 10, 2023</small>
+                            <small class="text text-sm"><i class="fas fa-comment"></i> 0 comments</small>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- end of posts section -->
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!--INICIO Seccion convenios  -->
+    <section class="convenios">
+        <div>
+            <h1 class="text-blue text-center text-shadow">Convenios</h1>
+        </div>
+        <div class="convenios-contenedor">
+            <div class="convenios-slider">
+                <ul>
+                    <li><img src="images/convenio1.PNG"></li>
+                    <li><img src="images/convenio2.PNG"></li>
+                    <li><img src="images/convenio3.PNG"></li>
+                    <li><img src="images/convenio4.PNG"></li>
+                    <li><img src="images/convenio5.PNG"></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+    <!--FIN Seccion convenios  -->
+
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
+
+    <!-- INICIO Seccion Contactenos junto a mapa -->
+    <section id="contact" class="contact py">
+        <div class="container grid">
+            <div class="contact-left">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703.0010416188172!2d-74.07105067546958!3d4.634288171042001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9a2e7e241aa3%3A0x66b2ec0e470ff23b!2sCl.%2045f%20%2316a%20-%2011%2C%20Teusaquillo%2C%20Bogot%C3%A1%2C%20Cundinamarca!5e0!3m2!1ses!2sco!4v1678193508503!5m2!1ses!2sco"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="contact-right text-white text-center bg-blue">
+                <div class="contact-head">
+                    <h3 class="lead">Contactenos</h3>
+                    <p class="text text-md">Estamos para brindarte la mejor experiencia.</p>
+                </div>
+                <form>
+                    <div class="form-element">
+                        <input type="text" class="form-control" placeholder="Nombre">
+                    </div>
+                    <div class="form-element">
+                        <input type="email" class="form-control" placeholder="correo">
+                    </div>
+                    <div class="form-element">
+                        <textarea rows="5" placeholder="Mensaje" class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-white btn-submit">
+                        <i class="fas fa-arrow-right"></i> Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- FIN Seccion Contactenos -->
+
+    <!-- INICIO footer  -->
     <footer id="footer" class="footer text-center">
         <div class="container">
             <div class="footer-inner text-white py grid">
@@ -681,9 +631,10 @@
     </footer>
     <!-- end of footer  -->
 
-
+    <!--/////////////////////////////////////////////////////////////////////////////////////-->
     <!-- custom js -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

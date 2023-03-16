@@ -19,7 +19,6 @@
     margin: 0;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-
 }
 
 html {
@@ -188,7 +187,7 @@ h3 {
     text-align: center;
 }
 
-/* header */
+/* header -----------MENU----------- */
 .header {
     min-height: 10vh;
 }
@@ -329,6 +328,8 @@ button[class ^=navbar]:hover {
     padding: 0 1.5rem;
 }
 
+/* header -----------MENU----------- */
+
 /* INICIO header inner */
 .header-inner {
     padding-top: 1rem;
@@ -373,7 +374,9 @@ button[class ^=navbar]:hover {
 
 /* FIN header inner*/
 
-/* INICIO de slider tipo Banner*/
+/* -------------------------------------------------------- */
+
+/* INICIO de slider de imagenes tipo Banner*/
 #slider {
     position: relative;
     width: 100%;
@@ -436,7 +439,9 @@ button[class ^=navbar]:hover {
 
 /*FIN de slider de imagenes tipo banner*/
 
-/* INICIO info de la clinica    */
+/* ----------------------------------------------------------------------- */
+
+/* INICIO info de la clinica */
 .container-infoclinica {
     display: flex;
     justify-content: center;
@@ -464,7 +469,6 @@ button[class ^=navbar]:hover {
     color: var(--light-color);
     padding: 10px;
     width: 250px;
-
     font-size: 25px;
 }
 
@@ -482,110 +486,9 @@ button[class ^=navbar]:hover {
 
 /* FIN info de la clinica    */
 
-/* INICIO Seccion Especialidades */
-.especialidades {
-    background-color: #ffffff;
-    color: #000000;
-    padding: 50px;
-    margin: 0 auto;
-}
+/* ----------------------------------------------------------------------- */
 
-.especialidades h2 {
-    font-size: 50px;
-    font-weight: bold;
-    margin-bottom: 30px;
-}
-
-.especialidades-tabla {
-    margin: 0 auto;
-}
-
-.especialidades-tabla tr {
-    margin: 20px;
-    justify-content: left;
-    padding: 5px 20px;
-}
-
-.especialidades-tabla td {
-    padding: 5px 20px;
-    font-size: large;
-}
-
-.tabs {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 30px;
-}
-
-.tab-link {
-    background-color: #fff;
-    border: none;
-    border-radius: 5px 5px 0 0;
-    color: #0077be;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px 20px;
-    transition: background-color 2s ease;
-    gap: 2rem;
-}
-
-.tab-link.active {
-    background-color: #0077be;
-    color: #fff;
-}
-
-.tab-content {
-    display: none;
-}
-
-.tab-content.active {
-    display: block;
-}
-
-/* FIN */
-
-/*Inicio de Horario */
-.horario-visitas {
-    margin: 5rem;
-
-}
-
-.grid-horario {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.divTitulo {
-    grid-area: 1 / 1 / 2 / 2;
-    border-right: solid 2px rgb(109, 119, 255);
-    display: flex;
-    align-items: center;
-    justify-content: right;
-    padding-right: 10rem;
-    font-size: 35px;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.divContent {
-    grid-area: 1 / 2 / 2 / 3;
-    padding: 5rem;
-}
-
-.divContent h3 {
-    font-size: 25px;
-}
-
-/*FIN de Horario*/
-
-
-/* banner one section */
+/* INICIO Seccion capaccidad Clinica  */
 .banner-one {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-1-img.png') top/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-1-img.png') top/cover no-repeat;
@@ -667,86 +570,116 @@ button[class ^=navbar]:hover {
     opacity: 0.7;
 }
 
-/* banner two section */
-.banner-two {
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.9)), to(rgba(0, 90, 213, 0.85))), url('../images/banner-two-bg.png') top/cover no-repeat;
-    background: -o-linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
-    background: linear-gradient(rgba(0, 80, 213, 0.9), rgba(0, 90, 213, 0.85)), url('../images/banner-two-bg.png') top/cover no-repeat;
-    padding: 13.6rem 0;
+/* FIN Seccion Capaccidad de la clinica
+
+/* ----------------------------------------------------------------------- */
+
+/* INICIO Seccion Especialidades */
+.especialidades {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 50px;
+    margin: 0 auto;
 }
 
-.banner-two-left img {
-    max-width: 620px;
-    margin: auto;
+.especialidades h2 {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
-.banner-two-right .lead {
-    font-size: 2.2rem;
-    margin-top: 6rem;
+.especialidades-tabla {
+    margin: 0 auto;
 }
 
-.banner-two-right .btn-group {
-    margin-top: 6rem;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+.especialidades-tabla tr {
+    margin: 20px;
+    justify-content: left;
+    padding: 5px 20px;
+}
+
+.especialidades-tabla td {
+    padding: 5px 20px;
+    font-size: large;
+}
+
+.tabs {
+    display: flex;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
-/* doctors panel */
-.doc-panel-inner {
-    margin-top: 8rem;
+.tab-link {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    color: #0077be;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: background-color 2s ease;
+    gap: 2rem;
 }
 
-.doc-panel-item {
-    margin-bottom: 6rem;
+.tab-link.active {
+    background-color: #0077be;
+    color: #fff;
 }
 
-.doc-panel-item:last-child {
-    margin-bottom: 0;
+.tab-content {
+    display: none;
 }
 
-.doc-panel-item .img {
-    position: relative;
-    height: 440px;
-    background-color: var(--light-gray);
-    overflow: hidden;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
+.tab-content.active {
+    display: block;
 }
 
-.doc-panel-item .img .info {
-    position: absolute;
-    bottom: -100%;
-    left: 0;
+/* FIN seccion Especialidades */
+
+/* ----------------------------------------------------------------------- */
+
+/*Inicio de Horario */
+.horario-visitas {
+    margin: 5rem;
+}
+
+.grid-horario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
     width: 100%;
-    height: 100px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-transition: var(--transition);
-    -o-transition: var(--transition);
-    transition: var(--transition);
+    margin: 0 auto;
 }
 
-.doc-panel-item .img {
-    max-width: 357px;
-    margin-left: auto;
-    margin-right: auto;
+.divTitulo {
+    grid-area: 1 / 1 / 2 / 2;
+    border-right: solid 2px rgb(109, 119, 255);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 10rem;
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 15px;
 }
 
-.doc-panel-item:hover .info {
-    bottom: 0;
+.divContent {
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 5rem;
 }
 
-/* package service */
-.package-service-inner {
-    margin-top: 14rem;
+.divContent h3 {
+    font-size: 25px;
 }
 
+/*FIN de seccion de Horario*/
 
-/* Servicios */
+/* ----------------------------------------------------------------------- */
+
+/* INICIO seccion de Servicios */
 .servicios-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -760,11 +693,19 @@ button[class ^=navbar]:hover {
     grid-area: 1 / 1 / 2 / 2;
 }
 
+.div1service {
+    list-style: none;
+}
+
+.customTable {
+    list-style: none;
+    margin: 0auto;
+}
+
 .div2service {
     grid-area: 1 / 2 / 2 / 3;
 }
 
-/* Servicios */
 .package-service {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 80, 213, 0.85)), to(rgba(0, 80, 213, 0.95))), url('../images/package-service-img.jpg') center/cover no-repeat;
     background: -o-linear-gradient(rgba(0, 80, 213, 0.85), rgba(0, 80, 213, 0.95)), url('../images/package-service-img.jpg') center/cover no-repeat;
@@ -823,7 +764,11 @@ button[class ^=navbar]:hover {
     margin: 4rem 0;
 }
 
-/* --------- INICIO reconocimientos ------ */
+/* FIN Seccion de Servicios */
+
+/* ----------------------------------------------------------------------- */
+
+/* INICIO de seccion de reconocimientos*/
 .reconocimiento {
     margin: 0 auto;
     background-color: rgb(255, 255, 255);
@@ -831,24 +776,25 @@ button[class ^=navbar]:hover {
 
 .contenedor-r {
     display: grid;
-    grid-template-columns: 1fr 2fr; 
+    grid-template-columns: 1fr 2fr;
     gap: 0px 0px;
-    margin: 0 auto; 
+    margin: 0 auto;
     width: auto;
     max-width: 1000px;
     height: auto;
 }
-.imagen-r { 
+
+.imagen-r {
     width: 100%;
-    margin: 0 auto; 
- 
-}
-.texto-r {
-    width: 100%;
-   padding-left: 10px;
-   padding-right: 10px;
+    margin: 0 auto;
+
 }
 
+.texto-r {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 .reconocimiento h1 {
     font-size: 50px;
@@ -863,15 +809,29 @@ button[class ^=navbar]:hover {
 }
 
 .texto-r p {
-    font-size: 18px;   
+    font-size: 18px;
 }
 
+/* FIN de seccion de reconocimientos */
+
+/* ----------------------------------------------------------------------- */
+
+/* INICIO de testimonios */
 
 
-/* --------- FIN reconocimientos ------ */
-/* posts section */
+
+
+
+/* FIN de testimonios */
+
+/* ----------------------------------------------------------------------- */
+
+/* INICIO Seccion de Post de noticias */
 .posts {
-    background-color: var(--light-gray);
+    background-image: url('/images/noticias-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .posts-inner {
@@ -912,7 +872,87 @@ button[class ^=navbar]:hover {
     padding-bottom: 0;
 }
 
-/* contact section */
+/* Fin de Seccion post de noticias*/
+
+/* ----------------------------------------------------------------------- */
+
+/*INICIO Seccion de convenios*/
+.convenios {
+    max-width: 1300px;
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.convenios h1 {
+    font-size: 50px;
+}
+
+.convenios-contenedor {}
+
+.convenios-slider {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.convenios-slider ul {
+    display: flex;
+    padding: 0;
+    width: 400%;
+    animation: cambio 20s infinite;
+    animation-timing-function: ease-in;
+}
+
+.convenios-slider li {
+    list-style: none;
+    width: 100%;
+}
+
+.convenios-slider img {
+    width: 100%;
+}
+
+@keyframes cambio {
+    0% {
+        margin-left: 0;
+    }
+
+    20% {
+        margin-left: 0;
+    }
+
+    25% {
+        margin-left: -100%;
+    }
+
+    45% {
+        margin-left: -100%;
+    }
+
+    50% {
+        margin-left: -200%;
+    }
+
+    70% {
+        margin-left: -200%;
+    }
+
+    75% {
+        margin-left: -300%;
+    }
+
+    100% {
+        margin-left: -300%;
+    }
+}
+
+/*FIN Seccion de convenios*/
+
+/* ----------------------------------------------------------------------- */
+
+/* INCICIO de seccion contactenos junto a mapa */
 .contact-left {
     margin-bottom: 6rem;
     height: 100%;
@@ -971,7 +1011,11 @@ button[class ^=navbar]:hover {
     margin-right: 2rem;
 }
 
-/* footer */
+/* FIN seccion Contactenos junto a mapa 
+
+/* ----------------------------------------------------------------------- */
+
+/*INICIO de seccion footer */
 .footer {
     background-color: var(--dark-color);
 }
@@ -1069,10 +1113,16 @@ button[class ^=navbar]:hover {
     color: var(--fros-blue-color);
 }
 
+/* FIN de seccio para footer */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* -------------------- fin de index ------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
 
 
+/*  --------------  MEDIA QUERYS ------------*/
 
-/* Media Queries */
 @media(min-width: 450px) {
     .navbar-collapse {
         width: 320px;
@@ -1091,7 +1141,6 @@ button[class ^=navbar]:hover {
         width: 405px;
     }
 }
-
 
 @media(min-width: 768px) {
     .header-inner-left h1 {
@@ -1432,245 +1481,28 @@ button[class ^=navbar]:hover {
     }
 }
 
+/*------------------- FIN DE MEDIA QUERYS ---------------- */
+
 /* transition and animation stopper */
-.resize-animation-stopper * {
-    -webkit-animation: none !important;
-    animation: none !important;
-    -webkit-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important;
-}
+
 
 .info-capacidad {
     grid-template-columns: repeat(5, 1fr);
     column-gap: 2em;
 }
 
+/* ---------------------------------------------------------------------------*/
+/* -------------------------PESTAÑA CONTACTENOS-------------------------------*/
+/* ---------------------------------------------------------------------------*/
 
-
-.testimonial-section {
-    padding: 50px 0;
-    background-color: #f7f7f7;
+.emptyContainer {
+    width: 10px;
+    height: 50px;
 }
 
-.testimonial-slider {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.testimonial-content {
-    text-align: center;
-}
-
-.testimonial-content img {
-    width: 200px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-}
-
-.testimonial-content p {
-    font-size: 18px;
-    line-height: 1.5;
-    color: #555;
-}
-
-
-.testimonios {
-    position: relative;
-    min-height: 70vh;
-    width: 100%;
-    background-color: #f8f8f8;
-    overflow: hidden;
-}
-
-.testimonial-section::before {
-    position: absolute;
-    content: '';
-    width: 2000px;
-    height: 100%;
-    bottom: -70%;
-    border-radius: 50%;
-    background: #3b7cf5;
-}
-
-.testimonios .heading {
-    display: inline-block;
-    position: relative;
-    color: #3b7cf5;
-    font-size: 4vw;
-    padding: 60px;
-    width: 100%;
-    text-align: center;
-    font-weight: 800;
-}
-
-
-.testimonios .heading::before {
-    position: absolute;
-    content: '';
-    width: 15%;
-    height: 7px;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 25%;
-    background: #393939;
-}
-
-.testimonios .heading b {
-    color: #fff;
-
-}
-
-.wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.contenedor-testimonios {
-    position: relative;
-    width: 350px;
-    color: #fff;
-    background: #696969;
-    margin: 40px 10px;
-    padding: 30px 20px;
-    border-radius: 3px;
-    transition: 0.3s ease;
-    box-shadow: 0px 4px 4px rgba(85, 85, 85, 0.45);
-
-}
-
-.profile {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: -10%;
-    width: 100%;
-    display: block;
-}
-
-.imgBox {
-    position: relative;
-    height: 100px;
-    width: 100px;
-    margin: auto;
-    border: 8px solid #070c0d;
-    border-radius: 50%;
-    overflow: hidden;
-}
-
-.imgBox img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: 0.3s ease;
-}
-
-.contenedor-testimonios h2 {
-    padding: 5px 0;
-    text-transform: capitalize;
-    color: #fff;
-    letter-spacing: 1px;
-    text-align: center;
-}
-
-.contenedor-testimonios p {
-    margin-top: 50px;
-    color: #fff;
-    padding: 0 8px;
-    font-size: 15px;
-    opacity: 0.8;
-}
-
-.contenedor-testimonios .left {
-    font-size: 30px;
-    display: block;
-    text-align: left;
-    color: #3b7cf5;
-}
-
-.contenedor-testimonios .right {
-    font-size: 30px;
-    display: block;
-    text-align: right;
-    color: #3b7cf5;
-}
-
-.contenedor-testimonios .social {
-    width: 100%;
-}
-
-.contenedor-testimonios .social i {
-    font-size: 1.2em;
-    color: #fff;
-    padding: 8px;
-    background: rgba(255, 255, 255, 0.671);
-    border-radius: 4px;
-}
-
-
-/* Estilo de la ventana modal */
-.modal {
-    display: none;
-    /* Oculta la ventana modal por defecto */
-    position: fixed;
-    /* Posición fija para mantener la ventana modal en la pantalla */
-    z-index: 1;
-    /* Para que la ventana modal aparezca por encima del resto del contenido */
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    /* Permite que el usuario pueda desplazarse si el contenido de la ventana modal es demasiado grande */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Fondo oscuro semitransparente para destacar la ventana modal */
-}
-
-/* Estilo del contenido de la ventana modal */
-.modal-content {
-    position: relative;
-    background-color: #fefefe;
-    /* Fondo blanco para el contenido de la ventana modal */
-    margin: auto;
-    padding: 0;
-    border: 1px solid #888;
-    width: 80%;
-    max-width: 600px;
-}
-
-/* Estilo del botón para cerrar la ventana modal */
-.close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-/* /////////PESTAÑA CONTACTENOS///////// */
-.emptyContainer{
-    width: 120px;
-    height: 120px;
-}
 .contenedor-contact {
-    width: 500px;
-    height: 500px;
+    width: auto;
+    max-height: 650px;
     padding-top: 10rem;
     margin: 0 auto;
     padding: 1rem;
@@ -1682,65 +1514,193 @@ button[class ^=navbar]:hover {
 
 .contenedor-contact p {}
 
-/* ///////////////////////////////////////////////////// */
-.grid-container1{
+/* ---------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------*/
+
+
+/* ---------------------------------------------------------------------------*/
+/* -------------------------PESTAÑA NOSOTROS-------------------------------*/
+/* ---------------------------------------------------------------------------*/
+
+.nosotros-contenedor {}
+
+.head-nosotros {
+    background-image: url(/images/bg-iconosmedicos.png);
+    background-position: center;
+    height: 250px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.head-nosotros h1 {
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+.body-nosotros {
+    padding: 10rem;
+}
+
+.body-nosotros {
+    font-size: 20px;
+    text-shadow: #000000;
+}
+
+.mision-vision {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    padding: 1rem;
+    margin-top: 70px;
+}
+
+.mision {
    
 }
-.Mision { grid-area: Mision; }
-.Vision { grid-area: Vision; }
+
+.vision {
+   
+}
+
+.nosotros-contenedor figure {
+    position: relative;
+ 
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.nosotros-contenedor figure img {
+    width: 100%;
+    height: 100%;
+    transition: all 500ms ease-out;
+}
+
+.nosotros-contenedor figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 14, 53, 0.911);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+}
+
+.nosotros-contenedor figure:hover>.capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.nosotros-contenedor figure:hover>.capa h3 {
+    margin-top: 120px;
+    margin-bottom: 25px;
+}
+
+.nosotros-contenedor figure .capa h3 {
+    color: #a2e5ff;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 250px;
+    transition: all 500ms ease-out;
+}
+
+.nosotros-contenedor figure .capa p {
+    color: #fff;
+    font-size: 17px;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+}
 
 
-.nosotros-container{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.grid-container1 {}
+
+.Mision {
+    grid-area: Mision;
+}
+
+.Vision {
+    grid-area: Vision;
+}
+
+
+.nosotros-container {
     width: 60%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height:100hv;
+    height: 100hv;
 }
 
-.nosotros-container figure{
+.nosotros-container figure {
     position: relative;
     height: 450px;
     width: 550px;
     overflow: hidden;
     cursor: pointer;
 }
-.nosotros-container figure img{
+
+.nosotros-container figure img {
     width: 100%;
     height: 100%;
-    transition: all 500ms ease-out;   
+    transition: all 500ms ease-out;
 }
-.nosotros-container figure .capa{
-position: absolute;
-top: 0;
-width: 100%;
-height: 100%;
-background: rgba(11, 103, 123, 0.6);
-transition: all 500ms ease-out;
-opacity: 0;
-visibility: hidden;
-text-align: center;
+
+.nosotros-container figure .capa {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 103, 123, 0.6);
+    transition: all 500ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
 }
-.nosotros-container figure:hover > .capa{
+
+.nosotros-container figure:hover>.capa {
     opacity: 1;
     visibility: visible;
 }
-.nosotros-container figure:hover > .capa h3{
+
+.nosotros-container figure:hover>.capa h3 {
     margin-top: 70px;
     margin-bottom: 15px;
 }
-.nosotros-container figure .capa h3{
+
+.nosotros-container figure .capa h3 {
     color: #fff;
     font-weight: 400;
     margin-bottom: 250px;
     transition: all 500ms ease-out;
 }
-.nosotros-container figure .capa p{
+
+.nosotros-container figure .capa p {
     color: #fff;
     font-size: 15px;
     line-height: 1.5;
     width: 100%;
     max-width: 420px;
     margin: auto;
-
-}
+}*/
